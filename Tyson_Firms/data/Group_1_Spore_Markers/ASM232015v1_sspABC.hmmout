@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  sspABC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM232015v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM232015v1_sspABC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM232015v1_sspABC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG411226C.meta_raw  [M=70]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.9e-20   70.6   0.6    2.1e-20   70.4   0.6    1.0  1  DCJX01000048.1_77  # 84943 # 85146 # 1 # ID=19_77;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DCJX01000048.1_77  # 84943 # 85146 # 1 # ID=19_77;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.4   0.6   4.5e-24   2.1e-20       5      65 ..       3      67 ..       1      67 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 70.4 bits;  conditional E-value: 4.5e-24
+  NOG.ENOG411226C.meta_raw  5 rerntnqlvvpgaqqaldqmKyEiAsElGvqlgad....ttsranGsvGGeitkrLValAeqqlg 65
+                              +++ +n++ vp+a++a+d++K E+AsElGv+l +     +ts+++Gs+GGe+++r+++  e+q++
+         DCJX01000048.1_77  3 SSNRSNRVEVPEAKAAMDRFKTEVASELGVNLKEGyngdLTSKEAGSIGGEMVRRMIRKQEEQMK 67
+                              47889**************************98755555************************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (70 nodes)
+Target sequences:                         4642  (1429177 residues searched)
+Passed MSV filter:                       115  (0.0247738); expected 92.8 (0.02)
+Passed bias filter:                       98  (0.0211116); expected 92.8 (0.02)
+Passed Vit filter:                         5  (0.00107712); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000215424); expected 0.0 (1e-05)
+Initial search space (Z):               4642  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5002.12
+//
+[ok]

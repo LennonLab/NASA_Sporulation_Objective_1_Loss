@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM248075v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM248075v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM248075v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    0.00025   18.1   4.2     0.0003   17.8   1.2    2.5  3  DLCT01000005.1_648  # 721820 # 723007 # 1 # ID=6_648;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> DLCT01000005.1_648  # 721820 # 723007 # 1 # ID=6_648;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=11-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.8   1.2   8.6e-08    0.0003      18     112 ..      20     115 ..       4     137 .. 0.63
+   2 ?   -0.2   0.0     0.028        99      72     118 ..     234     280 ..     220     283 .. 0.80
+   3 ?   -3.1   0.0      0.22   7.7e+02      30      56 ..     340     366 ..     328     378 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 17.8 bits;  conditional E-value: 8.6e-08
+           TIGR02852  18 lpkleklveegaevvpivsetvkttetrfG.egadwikkieeitgkkaiktiveaePlGPkkkldvlviaPltGnsmsklanaitd...sp 104
+                         l  + +l ++ ++v  i++++  +  t    ++      i+++  ++    + e++ +   kk d+lv++P t n + k+an+i+d   s+
+  DLCT01000005.1_648  20 LDVISRLKKKDINVDVIMTKSACEFVTPLSfQSLSQNAVIKNMFDEPK---VFEIQHISLAKKADILVVVPATANIIGKVANGIADdmlST 107
+                         556666666666666666655433333221022222233334444443...4455667788999*********************933334 PP
+
+           TIGR02852 105 vlmaakat 112
+                          +ma+ a+
+  DLCT01000005.1_648 108 TIMATNAK 115
+                         56776665 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.028
+           TIGR02852  72 ePlGPkkkldvlviaPltGnsmsklanaitdspvlmaakatlrnnkP 118
+                          P   k +l v +i   t + m k  +a  d++ ++   a + + kP
+  DLCT01000005.1_648 234 GPTSIKAPLGVKIIKVETNEEMLKAVKAEFDTSDIVVKSAAVSDYKP 280
+                         56677889999999999999999999999999877777777666666 PP
+
+  == domain 3  score: -3.1 bits;  conditional E-value: 0.22
+           TIGR02852  30 evvpivsetvkttetrfGegadwikki 56 
+                         ++  iv++++ ++++ fG  ++ ++ i
+  DLCT01000005.1_648 340 NLDYIVANNITESNAGFGSDTNRVTVI 366
+                         455677788888888888777766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         3537  (1055777 residues searched)
+Passed MSV filter:                       115  (0.0325134); expected 70.7 (0.02)
+Passed bias filter:                       74  (0.0209217); expected 70.7 (0.02)
+Passed Vit filter:                         6  (0.00169635); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000282725); expected 0.0 (1e-05)
+Initial search space (Z):               3537  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.03
+# Mc/sec: 6581.01
+//
+[ok]

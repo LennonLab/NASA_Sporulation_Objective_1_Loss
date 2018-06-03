@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIVA_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM237283v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM237283v1_spoIVA.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM237283v1_spoIVA.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XQ51.meta_raw  [M=492]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+  ------ inclusion threshold ------
+      0.018   10.9   0.0       0.03   10.1   0.0    1.2  1  DFIW01000027.1_113  # 123018 # 124805 # -1 # ID=14_113;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> DFIW01000027.1_113  # 123018 # 124805 # -1 # ID=14_113;partial=00;start_type=ATG;rbs_motif=3Base/5BMM;rbs_spacer=13-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   1.4e-05      0.03       6      38 ..     367     399 ..     364     402 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 1.4e-05
+  NOG.ENOG410XQ51.meta_raw   6 iykdiaeR.tggdiyiGvvgpvrtGkstfikrfm 38 
+                               i+k+i+     gdi iGv gpv  Gkstf k f+
+        DFIW01000027.1_113 367 IFKEISFDaLAGDI-IGVTGPVACGKSTFGKVFL 399
+                               78888754157887.9*************99885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (492 nodes)
+Target sequences:                         2104  (727788 residues searched)
+Passed MSV filter:                        88  (0.0418251); expected 42.1 (0.02)
+Passed bias filter:                       57  (0.0270913); expected 42.1 (0.02)
+Passed Vit filter:                        11  (0.00522814); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000475285); expected 0.0 (1e-05)
+Initial search space (Z):               2104  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 8951.79
+//
+[ok]

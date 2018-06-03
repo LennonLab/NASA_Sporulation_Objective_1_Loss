@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yqfC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM249173v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM249173v1_yqfC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM249173v1_yqfC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XV43.meta_raw  [M=94]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.1e-25   85.6   0.1    2.6e-25   85.4   0.1    1.0  1  DKWL01000035.1_12  # 8353 # 8673 # 1 # ID=115_12;partial=00;s
+    4.4e-07   26.9   0.0      5e-07   26.7   0.0    1.1  1  DKWL01000136.1_3   # 987 # 1286 # 1 # ID=120_3;partial=00;sta
+  ------ inclusion threshold ------
+      0.019   12.1   0.1      0.049   10.8   0.1    1.7  1  DKWL01000085.1_10  # 9007 # 9969 # 1 # ID=130_10;partial=00;s
+
+
+Domain annotation for each sequence (and alignments):
+>> DKWL01000035.1_12  # 8353 # 8673 # 1 # ID=115_12;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.4   0.1   2.6e-28   2.6e-25       9      92 ..      23     106 ..      19     106 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 85.4 bits;  conditional E-value: 2.6e-28
+  NOG.ENOG410XV43.meta_raw   9 lkeklaealelPkdvvldlpritliGnlelvienhrGileytdelvrvqtkkgqlevtGkeLvieeitneellieGkiesleyl 92 
+                               + e++++ l++P+d++  +p++t  G+ +++ien+r i+eytd  +r+qtk+ ++++ G++Lvi+++ ++ ++++G+i+s+ey+
+         DKWL01000035.1_12  23 IAERISRKLNMPEDIIAKAPVLTGYGRHRFCIENYRNIIEYTDCIIRIQTKTCRIHIVGEKLVIAYFREDGMCVTGNINSIEYH 106
+                               568999****************************************************************************96 PP
+
+>> DKWL01000136.1_3  # 987 # 1286 # 1 # ID=120_3;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7   0.0   5.2e-10     5e-07      36      93 ..      23      82 ..      12      83 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 5.2e-10
+  NOG.ENOG410XV43.meta_raw 36 lelvienhrGileytdelvrvqtkkgqlevtGkeLvieeit..neellieGkiesleylk 93
+                                 v+   r +l+++ ++v ++t++g l ++G+eL ++++   + e+ ++G+i+s  y +
+          DKWL01000136.1_3 23 RTAVLSGVRDVLSFDAKEVYLETEQGILLIKGDELHVNRLSleKGEVDVDGRIDSFAYSD 82
+                              5566777799****************************97611668*********99975 PP
+
+>> DKWL01000085.1_10  # 9007 # 9969 # 1 # ID=130_10;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.1     5e-05     0.049      10      73 ..      68     135 ..      61     148 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 5e-05
+  NOG.ENOG410XV43.meta_raw  10 keklaealelPkdvvldlpritliGnlelvie....nhrGileytdelvrvqtkkgqlevtGkeLvie 73 
+                               ++ +     +P dv++d  ++   Gnl ++ +    n+ G+le  ++   v+t     e+tG ++ i+
+         DKWL01000085.1_10  68 QKDMHIKKAIPDDVIIDNYVVSEEGNLSVYFNssygNYTGVLEILRRAAIVKTLCQIPEITGVQFYIA 135
+                               4556666789*******************9865556*******************999****999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (94 nodes)
+Target sequences:                         2910  (926516 residues searched)
+Passed MSV filter:                       115  (0.0395189); expected 58.2 (0.02)
+Passed bias filter:                       74  (0.0254296); expected 58.2 (0.02)
+Passed Vit filter:                         8  (0.00274914); expected 2.9 (0.001)
+Passed Fwd filter:                         3  (0.00103093); expected 0.0 (1e-05)
+Initial search space (Z):               2910  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 2177.31
+//
+[ok]

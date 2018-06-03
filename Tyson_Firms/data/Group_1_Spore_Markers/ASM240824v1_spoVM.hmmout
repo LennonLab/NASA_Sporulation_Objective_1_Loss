@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoVM_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM240824v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM240824v1_spoVM.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM240824v1_spoVM.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PF08183  [M=25]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+  ------ inclusion threshold ------
+       0.35    8.2   4.3        4.6    4.6   0.2    3.6  2  DHRC01000064.1_25  # 24749 # 26413 # -1 # ID=86_25;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DHRC01000064.1_25  # 24749 # 26413 # -1 # ID=86_25;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   0.2    0.0018       4.6      12      23 ..     422     433 ..     421     435 .. 0.87
+   2 ?    2.7   0.5    0.0068        18      11      18 ..     507     514 ..     506     515 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.0018
+            PF08183  12 lGGfVralLgsF 23 
+                        +GG+V+a++ ++
+  DHRC01000064.1_25 422 AGGIVGAVIATL 433
+                        7*******9987 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.0068
+            PF08183  11 FlGGfVra 18 
+                        FlGG+Vr 
+  DHRC01000064.1_25 507 FLGGLVRL 514
+                        9******6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (25 nodes)
+Target sequences:                         2608  (795908 residues searched)
+Passed MSV filter:                        69  (0.0264571); expected 52.2 (0.02)
+Passed bias filter:                       50  (0.0191718); expected 52.2 (0.02)
+Passed Vit filter:                         2  (0.000766871); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000383436); expected 0.0 (1e-05)
+Initial search space (Z):               2608  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 663.26
+//
+[ok]

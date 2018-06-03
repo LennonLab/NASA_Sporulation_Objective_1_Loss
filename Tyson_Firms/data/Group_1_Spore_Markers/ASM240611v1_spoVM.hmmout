@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoVM_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM240611v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM240611v1_spoVM.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM240611v1_spoVM.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PF08183  [M=25]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     0.0058   12.5   2.2       0.81    5.6   0.0    2.8  2  DHNC01000005.1_37  # 36114 # 36656 # 1 # ID=8_37;partial=00;s
+
+
+Domain annotation for each sequence (and alignments):
+>> DHNC01000005.1_37  # 36114 # 36656 # 1 # ID=8_37;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.0   1.2    0.0013       1.3      11      17 ..      55      61 ..      54      71 .. 0.76
+   2 !    5.6   0.0   0.00086      0.81      13      23 ..     131     141 ..     128     142 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.0013
+            PF08183 11 FlGGfVr 17
+                       F+GGfVr
+  DHNC01000005.1_37 55 FIGGFVR 61
+                       9*****9 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.00086
+            PF08183  13 GGfVralLgsF 23 
+                        ++fVr +L +F
+  DHNC01000005.1_37 131 SQFVRTCLAAF 141
+                        79******999 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (25 nodes)
+Target sequences:                          945  (297118 residues searched)
+Passed MSV filter:                        40  (0.042328); expected 18.9 (0.02)
+Passed bias filter:                       26  (0.0275132); expected 18.9 (0.02)
+Passed Vit filter:                         3  (0.0031746); expected 0.9 (0.001)
+Passed Fwd filter:                         1  (0.0010582); expected 0.0 (1e-05)
+Initial search space (Z):                945  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 742.79
+//
+[ok]

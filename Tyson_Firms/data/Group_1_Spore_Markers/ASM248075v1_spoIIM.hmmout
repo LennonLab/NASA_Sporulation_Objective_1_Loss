@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIM_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM248075v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM248075v1_spoIIM.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM248075v1_spoIIM.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.COG1300.meta_raw  [M=676]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------            -----------
+    1.3e-24   84.4  22.1    1.4e-24   84.3  22.1    1.0  1  DLCT01000005.1_1010  # 1094192 # 1094830 # 1 # ID=6_1010;part
+
+
+Domain annotation for each sequence (and alignments):
+>> DLCT01000005.1_1010  # 1094192 # 1094830 # 1 # ID=6_1010;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.3  22.1   3.8e-28   1.4e-24     196     380 ..       6     208 ..       1     212 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 84.3 bits;  conditional E-value: 3.8e-28
+  NOG.COG1300.meta_raw 196 wkrelpralrrlrkllllslllFllsiiigallv.......dpdfaesll.vketg......geespnatmflgiflnNlkvalltfll 270
+                           +  ++ ++++++ + +ll++l+ + ++i+g + v       +++++++++ +   g      g   +n ++ +g + nN+ + +  ++l
+   DLCT01000005.1_1010   6 IIDSFNKHFYENIWMYLLTILFIATGMILGLYCVkymgdvdKSTLINYITaF---GssstldG--LSNKEILMGTLKNNIPIIIGFWFL 89 
+                           456899***********9*************988988766666666666543...35443321..34569******************* PP
+
+  NOG.COG1300.meta_raw 271 Gl.llgig.tllilifNGillGvvlgffven.l...lleflllilPHGiiEipaillagaaGlrlgrgllfpgr.srl.a.lreaarra 350
+                           Gl ++g++ ++li i++G+ lG++++ff+       ll++ll++lP+++i ip++++ +++ + +++g+++ +  + + + ++ + +++
+   DLCT01000005.1_1010  90 GLtVVGLPiIILINIYKGFSLGFTFSFFIYGlKekgLLLSLLGVLPQNLIYIPCLIFLSVLSIEFSIGIVKEKFtK-KySpNTGSVKNY 177
+                           **669999788899***************8763776779******************************9999643.44346788999* PP
+
+  NOG.COG1300.meta_raw 351 lklllglvplLliAAfIEafvTpsi.plllk 380
+                             ++l+++ +++i  + E+f+Tp++ ++ lk
+   DLCT01000005.1_1010 178 TMMFLIVTGVMFIGFLFESFITPILiNFALK 208
+                           ************************7688877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (676 nodes)
+Target sequences:                         3537  (1055777 residues searched)
+Passed MSV filter:                       543  (0.15352); expected 70.7 (0.02)
+Passed bias filter:                      126  (0.0356234); expected 70.7 (0.02)
+Passed Vit filter:                        13  (0.00367543); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000282725); expected 0.0 (1e-05)
+Initial search space (Z):               3537  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# Mc/sec: 17842.63
+//
+[ok]

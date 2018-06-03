@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM241936v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM241936v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM241936v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     0.0051   13.3   0.2      0.011   12.2   0.2    1.6  1  DIGA01000121.1_22  # 22245 # 23420 # 1 # ID=16_22;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DIGA01000121.1_22  # 22245 # 23420 # 1 # ID=16_22;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=11-12bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.2   4.5e-06     0.011       1     109 [.       5     113 ..       5     139 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 4.5e-06
+          TIGR02852   1 kriGfgltgshctleavlpkleklveegaevvpivsetvkttetrfGegadw..ikkieeitgkkaiktiveaePlGPkkkldvlviaPltG 90 
+                        k+i +g+tgs  +++a+      l++ g ev+ i++e      trf  +  +  +++ + +    + +   ++  +   +++d++++aP t 
+  DIGA01000121.1_22   5 KKITLGVTGSIAAYKAA-EIASALTSAGHEVRVIMTEHA----TRFISPITFetLTRQKVLVDMFSDEDHRQVSHIEQGTNIDLVLVAPATF 91 
+                        79999*****9999875.4557899********999864....55655543311444444444444444455666777899*********** PP
+
+          TIGR02852  91 nsmsklanaitd...spvlmaa 109
+                        n + k  ++i+d   s+vl aa
+  DIGA01000121.1_22  92 NIIGKAVQGIADdllSSVLAAA 113
+                        **********995555677666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         2461  (821038 residues searched)
+Passed MSV filter:                        64  (0.0260057); expected 49.2 (0.02)
+Passed bias filter:                       53  (0.021536); expected 49.2 (0.02)
+Passed Vit filter:                         6  (0.00243803); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000406339); expected 0.0 (1e-05)
+Initial search space (Z):               2461  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 7676.71
+//
+[ok]

@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM238268v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM238268v1_spoIIIAC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM238268v1_spoIIIAC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG41121JY.meta_raw  [M=243]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.4e-23   80.2   1.5    1.5e-23   80.1   1.5    1.0  1  DFZH01000095.1_11  # 6675 # 6878 # 1 # ID=66_11;partial=00;st
+    2.3e-11   40.3   0.0    2.8e-11   40.0   0.0    1.0  1  DFZH01000095.1_10  # 6145 # 6663 # 1 # ID=66_10;partial=00;st
+  ------ inclusion threshold ------
+      0.024   10.7  14.8      0.067    9.3   3.6    2.0  2  DFZH01000095.1_12  # 6887 # 7273 # 1 # ID=66_12;partial=00;st
+
+
+Domain annotation for each sequence (and alignments):
+>> DFZH01000095.1_11  # 6675 # 6878 # 1 # ID=66_11;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.1   1.5   2.3e-26   1.5e-23     179     243 .]       2      66 ..       1      66 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 80.1 bits;  conditional E-value: 2.3e-26
+  NOG.ENOG41121JY.meta_raw 179 gmevslifkiAavGilvsvlsqvLkhsgreeqafllsLaGlilvLtwvipyiydLFetikklFql 243
+                               g +++lif+i +vGilvs  + vLk+sg+e++afl++L Gl +vL+wvi+++ ++F++++++F+l
+         DFZH01000095.1_11   2 GFDIDLIFRIVGVGILVSAAHYVLKNSGKEDYAFLATLGGLAIVLIWVIQLLGNFFDQVRTVFKL 66 
+                               679************************************************************97 PP
+
+>> DFZH01000095.1_10  # 6145 # 6663 # 1 # ID=66_10;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.0   0.0   4.1e-14   2.8e-11       1     148 [.       1     152 [.       1     158 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 40.0 bits;  conditional E-value: 4.1e-14
+  NOG.ENOG41121JY.meta_raw   1 mmklsgalllvlgcagfgwctcrdmerhigqlhllsrafsmlesevgysratlpeglirvgnrlggrlgecfinvgkkaqgpegi 85 
+                               m+k++g+ll++ + +  g   +r+  r+ g+l+ +  a+ mle+e+ y+ + lpe+l r++ r    ++  f    ++  +  g 
+         DFZH01000095.1_10   1 MLKIAGCLLIMSAGSFAGISMARNYARRPGELRSMVTALQMLETEISYTATPLPEALARIAARCDKAIAPLFSRASEELYAQTGC 85 
+                               89*****999998888899****************************************************************** PP
+
+  NOG.ENOG41121JY.meta_raw  86 tfaaawdeevagflketcldkkeeelllsfpgftgfvdgqmql....isleqfgkeirraeekarke 148
+                               t   aw+  +  f   +     +  +l  +  + g  +g+ q     ++ eq+  ei  ae++a k 
+         DFZH01000095.1_10  86 TAGEAWETALNKFYALSSTLPSDLAVLRNLGTVLGISNGEDQCkhlrLAKEQLKGEIITAEQQAAKY 152
+                               *************998887777888888888888888776664111256699999999999999875 PP
+
+>> DFZH01000095.1_12  # 6887 # 7273 # 1 # ID=66_12;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   3.6    0.0001     0.067     185     237 ..       3      57 ..       2      63 .. 0.71
+   2 ?    8.0   3.1   0.00024      0.16     181     236 ..      67     122 ..      56     127 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.0001
+  NOG.ENOG41121JY.meta_raw 185 ifkiAavGilvsvlsqvLkhsgreeqafllsLa.GlilvLtwv...ipyiydLFeti 237
+                               i +i ++Gi+ ++l  v  +  + e a +lsLa Gl+l +++v   i  + dLF+ +
+         DFZH01000095.1_12   3 IIQIVGLGIMAALLA-VTIRQHKPEIALFLSLAaGLML-FMVVlgkIGAVIDLFKDL 57 
+                               7899*****999886.5566789999999999726655.444413355667777765 PP
+
+  == domain 2  score: 8.0 bits;  conditional E-value: 0.00024
+  NOG.ENOG41121JY.meta_raw 181 evslifkiAavGilvsvlsqvLkhsgreeqafllsLaGlilvLtwvipyiydLFet 236
+                                + +i+k+ a+  +     q+ + +g    a  + La  +lvL++ ip++  + ++
+         DFZH01000095.1_12  67 YLGIILKVVAIAYIADFGAQICRDAGEGTLAAKIELAAKVLVLVLAIPIVIAVLQA 122
+                               5679*******************************************998877665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (243 nodes)
+Target sequences:                         2011  (522218 residues searched)
+Passed MSV filter:                        92  (0.0457484); expected 40.2 (0.02)
+Passed bias filter:                       66  (0.0328195); expected 40.2 (0.02)
+Passed Vit filter:                         6  (0.00298359); expected 2.0 (0.001)
+Passed Fwd filter:                         3  (0.0014918); expected 0.0 (1e-05)
+Initial search space (Z):               2011  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.02s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6344.95
+//
+[ok]

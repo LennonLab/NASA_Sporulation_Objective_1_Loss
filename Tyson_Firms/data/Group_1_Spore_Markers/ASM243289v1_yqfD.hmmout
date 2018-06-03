@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yqfD_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM243289v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM243289v1_yqfD.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM243289v1_yqfD.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XR5M.meta_raw  [M=402]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+  ------ inclusion threshold ------
+      0.011   11.3   1.1        0.2    7.1   0.2    2.2  2  DJHA01000107.1_9  # 8408 # 8800 # -1 # ID=96_9;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> DJHA01000107.1_9  # 8408 # 8800 # -1 # ID=96_9;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.2   0.00011       0.2     211     225 ..      76      90 ..      74      99 .. 0.90
+   2 ?    2.9   0.0    0.0021       3.7     190     212 ..      99     121 ..      91     127 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.00011
+  NOG.ENOG410XR5M.meta_raw 211 vvkeGdtVkkGdvLi 225
+                               +vkeG++Vk GdvL 
+          DJHA01000107.1_9  76 LVKEGQEVKSGDVLL 90 
+                               8************95 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.0021
+  NOG.ENOG410XR5M.meta_raw 190 cniVAkkdGvIteiivrsGtpvv 212
+                                 i A +dG + +i + +G +v 
+          DJHA01000107.1_9  99 NEILAPRDGKVASITTSEGSAVN 121
+                               5799***************8763 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (402 nodes)
+Target sequences:                         1762  (537782 residues searched)
+Passed MSV filter:                       168  (0.0953462); expected 35.2 (0.02)
+Passed bias filter:                      108  (0.061294); expected 35.2 (0.02)
+Passed Vit filter:                         9  (0.00510783); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000567537); expected 0.0 (1e-05)
+Initial search space (Z):               1762  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7206.28
+//
+[ok]

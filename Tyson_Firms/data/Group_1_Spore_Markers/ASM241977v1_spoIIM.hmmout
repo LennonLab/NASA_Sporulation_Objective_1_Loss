@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIM_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM241977v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM241977v1_spoIIM.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM241977v1_spoIIM.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.COG1300.meta_raw  [M=676]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+     0.0022   13.8   0.0     0.0025   13.6   0.0    1.1  1  DIGT01000005.1_41   # 40812 # 41654 # -1 # ID=11_41;partial=0
+     0.0037   13.1   0.0     0.0039   13.0   0.0    1.0  1  DIGT01000020.1_131  # 138230 # 138535 # 1 # ID=21_131;partial
+      0.007   12.2   0.1      0.009   11.8   0.1    1.1  1  DIGT01000019.1_22   # 26114 # 26707 # -1 # ID=8_22;partial=00
+     0.0077   12.0   0.1     0.0096   11.7   0.1    1.2  1  DIGT01000015.1_133  # 143465 # 144925 # -1 # ID=19_133;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> DIGT01000005.1_41  # 40812 # 41654 # -1 # ID=11_41;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.0   3.8e-06    0.0025     137     183 ..     191     236 ..     111     248 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 3.8e-06
+  NOG.COG1300.meta_raw 137 legaelaeladlyreilddlsyartfypnrevrsyLnglaarahaei 183
+                             + ++ae+a+ly++i+d l+ a + +   ++r+yLn l++ +++++
+     DIGT01000005.1_41 191 ADSLKPAEVATLYQAIIDVLARAVE-AGGTTIRTYLNALGEAGTFQV 236
+                           45689******************44.55578*********9887666 PP
+
+>> DIGT01000020.1_131  # 138230 # 138535 # 1 # ID=21_131;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   5.9e-06    0.0039     375     423 ..       5      56 ..       2      96 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 5.9e-06
+  NOG.COG1300.meta_raw 375 iplllklaialvslfiviiYllvsgrnrsa..klasevfyeslk...ltlllfk 423
+                           +++++ l++a+++ +++iiYl v g  ++   k+++e++  + +   +++++++
+    DIGT01000020.1_131   5 FNMFILLIVATILMIFLIIYLTVTGNDKNNkkKQKKETK--RTTptlNKKTTVP 56 
+                           47799999****************865554222222222..2111111111222 PP
+
+>> DIGT01000019.1_22  # 26114 # 26707 # -1 # ID=8_22;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.1   1.4e-05     0.009     230     281 ..      37     104 ..      26     106 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.4e-05
+  NOG.COG1300.meta_raw 230 dpdfaesll..vketg...................geespnatmflgiflnNlkvalltfllGlllgigtlli 281
+                           d + a+s++  +   +                   g  s  a ++++ ++n +k++++t++lG+++ +g++l+
+     DIGT01000019.1_22  37 DDNVANSVIaqL---LfldaqdsekdiylyinspgG--SVSAGLAIFDTMNFVKADVQTIVLGMAASMGSFLL 104
+                           666666664331...124455666677776643321..333479*************************9986 PP
+
+>> DIGT01000015.1_133  # 143465 # 144925 # -1 # ID=19_133;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   1.4e-05    0.0096     350     411 ..       4      64 ..       1     157 [. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.4e-05
+  NOG.COG1300.meta_raw 350 alklllglvplLliAAfIEafvTps.iplllkl..aialvslfiviiYllvsgrnrsaklasevf 411
+                           ++++ll+l ++ +iAA+I +f  p  i+ +l +   ++++ ++ +iiYl+      ++    evf
+    DIGT01000015.1_133   4 FVWILLFLLVINVIAALITVFRKPRsISSVLAWmmTLIFLPGIGFIIYLFCGRGIDGQ----EVF 64 
+                           79**********************9546666552223445555589999966432332....333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (676 nodes)
+Target sequences:                         2659  (830599 residues searched)
+Passed MSV filter:                       424  (0.159458); expected 53.2 (0.02)
+Passed bias filter:                       96  (0.0361038); expected 53.2 (0.02)
+Passed Vit filter:                        11  (0.00413689); expected 2.7 (0.001)
+Passed Fwd filter:                         4  (0.00150432); expected 0.0 (1e-05)
+Initial search space (Z):               2659  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.04
+# Mc/sec: 14037.12
+//
+[ok]

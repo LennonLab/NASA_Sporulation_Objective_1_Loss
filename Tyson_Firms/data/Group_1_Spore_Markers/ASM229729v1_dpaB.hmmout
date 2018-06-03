@@ -1,0 +1,51 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM229729v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM229729v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM229729v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     0.0039   12.7   0.0     0.0093   11.5   0.0    1.6  1  DBKI01000078.1_12  # 8689 # 10434 # 1 # ID=59_12;partial=00;s
+
+
+Domain annotation for each sequence (and alignments):
+>> DBKI01000078.1_12  # 8689 # 10434 # 1 # ID=59_12;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   7.5e-06    0.0093      13      61 ..     217     265 ..     213     277 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 7.5e-06
+          TIGR02852  13 tleavlpkleklveegaevvpivsetvkttetrfGegadwikkieeitg 61 
+                        +l+++l++ +klv+eg + ++++ ++v++    f +g+++ k +ee++ 
+  DBKI01000078.1_12 217 KLDEILAECKKLVDEGYQEITLLGQNVNSYGKDFHDGTNFAKVLEEVAK 265
+                        6899*****************************************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         1247  (403677 residues searched)
+Passed MSV filter:                        38  (0.0304731); expected 24.9 (0.02)
+Passed bias filter:                       32  (0.0256616); expected 24.9 (0.02)
+Passed Vit filter:                         2  (0.00160385); expected 1.2 (0.001)
+Passed Fwd filter:                         1  (0.000801925); expected 0.0 (1e-05)
+Initial search space (Z):               1247  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 7548.76
+//
+[ok]

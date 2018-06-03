@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM238599v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM238599v1_spoIIIAC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM238599v1_spoIIIAC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG41121JY.meta_raw  [M=243]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.6e-21   73.2   2.4    1.7e-21   73.1   2.4    1.0  1  DGEN01000010.1_23  # 24782 # 24982 # 1 # ID=29_23;partial=00;
+    2.8e-05   19.9   0.1    4.6e-05   19.3   0.1    1.3  1  DGEN01000010.1_22  # 24236 # 24769 # 1 # ID=29_22;partial=00;
+     0.0076   12.0  11.0      0.023   10.4   1.9    2.0  2  DGEN01000010.1_24  # 24994 # 25380 # 1 # ID=29_24;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DGEN01000010.1_23  # 24782 # 24982 # 1 # ID=29_23;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   73.1   2.4   3.2e-24   1.7e-21     181     243 .]       3      65 ..       1      65 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 73.1 bits;  conditional E-value: 3.2e-24
+  NOG.ENOG41121JY.meta_raw 181 evslifkiAavGilvsvlsqvLkhsgreeqafllsLaGlilvLtwvipyiydLFetikklFql 243
+                               + +lifkiA++ i+vsvl+ v+k++g+ee+a l++L+G+++vL +v+ +++d+F+++k+ F+l
+         DGEN01000010.1_23   3 NTDLIFKIAGLAIIVSVLHAVVKQAGKEEYAWLITLTGVVIVLSMVLGLVADFFQAVKSTFNL 65 
+                               569**********************************************************97 PP
+
+>> DGEN01000010.1_22  # 24236 # 24769 # 1 # ID=29_22;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.1   8.8e-08   4.6e-05      12      77 ..      18      83 ..       8     100 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 8.8e-08
+  NOG.ENOG41121JY.meta_raw 12 lgcagfgwctcrdmerhigqlhllsrafsmlesevgysratlpeglirvgnrlggrlgecfinvgk 77
+                               + a  g   +  +e+++ +l  +  a+  l +e+ ys ++lp++l+  g ++gg  g  f  +g 
+         DGEN01000010.1_22 18 CAGALGGNRMAAKLEKQLDELSRFELALLTLSNEISYSLSSLPKALVNAGHKVGGDTGTLFTLIGS 83
+                              22222366677889999999999999*********************************9988875 PP
+
+>> DGEN01000010.1_24  # 24994 # 25380 # 1 # ID=29_24;partial=00;start_type=TTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.5   2.8   0.00067      0.35     185     232 ..       3      49 ..       2      60 .. 0.83
+   2 !   10.4   1.9   4.5e-05     0.023     183     240 ..      69     126 ..      48     128 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.00067
+  NOG.ENOG41121JY.meta_raw 185 ifkiAavGilvsvlsqvLkhsgreeqafllsLaGlilvLtwvipyiyd 232
+                               if+i  +Gi  s++  +L++ +r e a +ls+a    +L+ v+p +  
+         DGEN01000010.1_24   3 IFQIVILGITASLILLILRR-ERPELALVLSMAAGAAILVAVLPGLRM 49 
+                               9**************99976.89*********9888888888876554 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 4.5e-05
+  NOG.ENOG41121JY.meta_raw 183 slifkiAavGilvsvlsqvLkhsgreeqafllsLaGlilvLtwvipyiydLFetikkl 240
+                                +i+k+ a+  +  +  ++ + ++ +  a  + +aG il+L+  ip+i+ + e i++l
+         DGEN01000010.1_24  69 GIILKVVAIAYIADLGASICRDADENLIASRIEMAGKILILVCSIPIIQGIVELIRTL 126
+                               5899************************************************999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (243 nodes)
+Target sequences:                         1555  (491568 residues searched)
+Passed MSV filter:                        65  (0.0418006); expected 31.1 (0.02)
+Passed bias filter:                       50  (0.0321543); expected 31.1 (0.02)
+Passed Vit filter:                         6  (0.00385852); expected 1.6 (0.001)
+Passed Fwd filter:                         3  (0.00192926); expected 0.0 (1e-05)
+Initial search space (Z):               1555  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.03s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5972.55
+//
+[ok]

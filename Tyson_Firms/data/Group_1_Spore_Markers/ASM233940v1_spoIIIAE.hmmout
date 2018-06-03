@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAE_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM233940v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM233940v1_spoIIIAE.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM233940v1_spoIIIAE.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XRMF.meta_raw  [M=392]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+   5.5e-113  376.3  28.2   7.5e-113  375.8  28.2    1.1  1  DDLB01000239.1_15  # 10348 # 11745 # 1 # ID=492_15;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DDLB01000239.1_15  # 10348 # 11745 # 1 # ID=492_15;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  375.8  28.2  1.4e-116  7.5e-113       1     390 [.      73     463 ..      69     465 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 375.8 bits;  conditional E-value: 1.4e-116
+  NOG.ENOG410XRMF.meta_raw   1 mkkllkvllllll.lllllalv.....eeeaaeeeae.eaeeeqleeldleelekfldelekeygellpdldfkelvkellkGel 78 
+                               mk+ + ++ll+l+ l+ll++++     e +++ +ea+  ae+ +l+++dl+++++fld+    +++   +l+fk+l+k+l+ G+l
+         DDLB01000239.1_15  73 MKRTA-FFLLCLIsLMLLFFCKdslgaE-TSSGKEASiPAENLDLDQYDLTDIQNFLDRS---KENQGMNLSFKKLMKDLMDGKL 152
+                               44432.3333332122222222345432.333333330344558999***********99...4778889*************** PP
+
+  NOG.ENOG410XRMF.meta_raw  79 klslkellkallrylfkevlsnlklllkllllavlaavLqnlqsaFeneqvseiafyvvylllivlllksFrvalsiakeaiesm 163
+                               +  ++++ kal+++l++ev++++++++ +++l +++av++n++s+F  +q+se++f+v+ylll++ l++sF+++++i+ +++ ++
+         DDLB01000239.1_15 153 NEVMGQVGKALKDLLVGEVRNSGHMMGPIMVLGIIGAVFSNFSSVFTGSQISETGFFVTYLLLFTYLAASFFTSVTITGNVVGQI 237
+                               ************************************************************************************* PP
+
+  NOG.ENOG410XRMF.meta_raw 164 vdFmlallPvlltllasvgglasaavlhplvlflinlvetliknvvlPliflsavlsivnnlskeeklskLaellkqialwilgl 248
+                               +dF ++l+P+++++ a++g++asaa+ ++++l++i + ++l+ +v+l li+++a+l +++++ kee+lskL+ell+q+++w+l++
+         DDLB01000239.1_15 238 LDFTKVLMPAYFLAAAFAGSSASAAASYEFTLLVIVAAQWLLGQVLLALIRVYALLVMAGHIAKEEMLSKLTELLEQVVSWSLKT 322
+                               ************************************************************************************* PP
+
+  NOG.ENOG410XRMF.meta_raw 249 lltvflGvlsiqgltspvaDgvtlrtakfavgnfiPvvGkalsdavetVlgsslLlKNavGlaglvilllivafPlikilalalv 333
+                               l++v+lG+++iq+++ p++D+++  ++++  g +iP++G+ +++++++Vlgs++L+KN++G+ag++ill++ ++Plik+++l+++
+         DDLB01000239.1_15 323 LVGVVLGFHLIQSMVLPYVDSMKTGAIQKPLG-AIPGIGQGVNSVAQMVLGSGVLIKNTIGAAGIIILLILSVIPLIKLAVLMVL 406
+                               *******************************6.**************************************************** PP
+
+  NOG.ENOG410XRMF.meta_raw 334 YklaaAlvqPvgdkriveclsamgkslvlllaavatvslmffiaiaivlaagnlavm 390
+                               Y+++aAl+qPv+dkriv+c+s+m+k++ +ll++ a++ ++f+++ia+v+a++n++++
+         DDLB01000239.1_15 407 YQCVAALLQPVCDKRIVSCISEMAKGHKMLLSVAASAVILFVVTIALVCASTNVTYY 463
+                               ******************************************************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (392 nodes)
+Target sequences:                         5481  (1283985 residues searched)
+Passed MSV filter:                       567  (0.103448); expected 109.6 (0.02)
+Passed bias filter:                      187  (0.0341179); expected 109.6 (0.02)
+Passed Vit filter:                        13  (0.00237183); expected 5.5 (0.001)
+Passed Fwd filter:                         1  (0.000182448); expected 0.1 (1e-05)
+Initial search space (Z):               5481  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.04
+# Mc/sec: 12583.05
+//
+[ok]

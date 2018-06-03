@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yqfC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM235293v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM235293v1_yqfC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM235293v1_yqfC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XV43.meta_raw  [M=94]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+      2e-28   94.5   0.7    2.3e-28   94.3   0.7    1.0  1  DDHO01000004.1_41  # 44976 # 45272 # 1 # ID=98_41;partial=00;
+    8.2e-06   22.0   0.2      1e-05   21.7   0.2    1.1  1  DDHO01000035.1_4   # 1282 # 1569 # -1 # ID=59_4;partial=00;st
+
+
+Domain annotation for each sequence (and alignments):
+>> DDHO01000004.1_41  # 44976 # 45272 # 1 # ID=98_41;partial=00;start_type=GTG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.3   0.7   2.9e-31   2.3e-28       6      91 ..      11      96 ..       6      98 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 94.3 bits;  conditional E-value: 2.9e-31
+  NOG.ENOG410XV43.meta_raw  6 keklkeklaealelPkdvvldlpritliGnlelvienhrGileytdelvrvqtkkgqlevtGkeLvieeitneellieGkiesley 91
+                              k+ +  +l+e+++lP++vv++lp+it+iGnl l ienhrGi+ey +e++rv ++ g+lev+G++L +++i+++ + i+G+i+++e 
+         DDHO01000004.1_41 11 KKIMGCSLTEIFDLPHEVVMNLPKITIIGNLILEIENHRGIIEYCPEKIRVGVTGGELEVRGENLILSNILPDFINIRGTIKDIEL 96
+                              45566789***************************************************************************986 PP
+
+>> DDHO01000035.1_4  # 1282 # 1569 # -1 # ID=59_4;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.7   0.2   1.3e-08     1e-05      37      93 ..      17      75 ..       3      76 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 21.7 bits;  conditional E-value: 1.3e-08
+  NOG.ENOG410XV43.meta_raw 37 elvienhrGileytdelvrvqtkkgqlevtGkeLvieei..tneellieGkiesleylk 93
+                               l++   r +++y++ ++ ++t  g+l+++G++L+i ++  ++ +l ++G+++  +y +
+          DDHO01000035.1_4 17 YLTVTGIRHVINYDEGEIILETDMGTLNLKGDKLNILNLdlKKGDLSVSGHFTGFNYSE 75
+                              567778899***************************986225778******99999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (94 nodes)
+Target sequences:                         1612  (458652 residues searched)
+Passed MSV filter:                        57  (0.0353598); expected 32.2 (0.02)
+Passed bias filter:                       39  (0.0241935); expected 32.2 (0.02)
+Passed Vit filter:                         6  (0.00372208); expected 1.6 (0.001)
+Passed Fwd filter:                         2  (0.00124069); expected 0.0 (1e-05)
+Initial search space (Z):               1612  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4311.33
+//
+[ok]

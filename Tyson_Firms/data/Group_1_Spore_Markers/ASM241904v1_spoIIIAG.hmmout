@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAG_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM241904v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM241904v1_spoIIIAG.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM241904v1_spoIIIAG.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG41123Y1.meta_raw  [M=203]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+  ------ inclusion threshold ------
+      0.017   11.5   0.0      0.019   11.4   0.0    1.0  1  DIFJ01000003.1_9  # 9584 # 9802 # -1 # ID=57_9;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> DIFJ01000003.1_9  # 9584 # 9802 # -1 # ID=57_9;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   7.5e-06     0.019      21      73 ..      11      66 ..       8      72 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 7.5e-06
+  NOG.ENOG41123Y1.meta_raw 21 kkekllillllGvlllvlsspfskkkekeeeae......kseeakeekketekseqeey 73
+                              ++++l++l+++Gvl+ ++ +  + k   ++ ae          ++ +k+e +k++ +++
+          DIFJ01000003.1_9 11 TFMWLIFLIVVGVLIYFIVQAQKAKGPMQTRAEspldilR---TRYAKGEISKEDFDRM 66
+                              57899**************999999888776655553331...3333333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (203 nodes)
+Target sequences:                         2494  (760411 residues searched)
+Passed MSV filter:                       136  (0.0545309); expected 49.9 (0.02)
+Passed bias filter:                       89  (0.0356856); expected 49.9 (0.02)
+Passed Vit filter:                        13  (0.00521251); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000400962); expected 0.0 (1e-05)
+Initial search space (Z):               2494  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7718.17
+//
+[ok]

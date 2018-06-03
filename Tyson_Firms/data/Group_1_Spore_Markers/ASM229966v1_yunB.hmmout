@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yunB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM229966v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM229966v1_yunB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM229966v1_yunB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410ZYAS.meta_raw  [M=256]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    0.00022   17.5   0.5    0.00024   17.4   0.5    1.1  1  DBOU01000122.1_2   # 458 # 949 # 1 # ID=63_2;partial=00;start
+    0.00097   15.4   0.1     0.0011   15.2   0.1    1.1  1  DBOU01000052.1_2   # 61 # 333 # -1 # ID=149_2;partial=00;star
+     0.0041   13.4   0.2      0.005   13.1   0.2    1.1  1  DBOU01000137.1_69  # 83729 # 84169 # 1 # ID=224_69;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DBOU01000122.1_2  # 458 # 949 # 1 # ID=63_2;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.4   0.5   2.7e-07   0.00024      22     103 ..      41     136 ..       9     151 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 17.4 bits;  conditional E-value: 2.7e-07
+  NOG.ENOG410ZYAS.meta_raw  22 rrrp..............rprrivlliilvliivilill.liildrelrptlmaiaelqakqiateaIneaiaeqlatkqidyed 91 
+                               rrr+              + + +v+++++ ++++++i + +i ++  l++ + +i++l+ +   + + nea ++++a  ++d + 
+          DBOU01000122.1_2  41 RRRQnkyaakrnqqkallMDKGYVMFLTMAVLVIGIISVlYIRIQADLTERMHNISRLESQVSDVLIENEATRKRIA-TSVDLNH 124
+                               1111233333344566654444666666666666655555*************************************.5****99 PP
+
+  NOG.ENOG410ZYAS.meta_raw  92 LvavkkdedGki 103
+                               + +v  ++ G +
+          DBOU01000122.1_2 125 VKDVAVNQLGMV 136
+                               999998888844 PP
+
+>> DBOU01000052.1_2  # 61 # 333 # -1 # ID=149_2;partial=00;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.447
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.1   1.2e-06    0.0011      67     104 ..      54      89 ..      43      90 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.2e-06
+  NOG.ENOG410ZYAS.meta_raw  67 kqiateaIneaiaeqlatkqidyedLvavkkdedGkiv 104
+                                 i+ + In+ai+e +   +i+  dLv +k+  +G+ v
+          DBOU01000052.1_2  54 SVIVYRKINDAINEVVD--GITLADLVSWKMQGKGQYV 89 
+                               5688899******9999..9**************9976 PP
+
+>> DBOU01000137.1_69  # 83729 # 84169 # 1 # ID=224_69;partial=00;start_type=ATG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.2   5.5e-06     0.005      19      89 ..      30     103 ..       3     107 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 5.5e-06
+  NOG.ENOG410ZYAS.meta_raw  19 adarrrp..rprr..ivlliilvliivilillliildrelrptlmaiaelqakqiateaIneaiaeqlatkqidy 89 
+                               +++++r+  r ++  +  ++ +++i++++ ++l++++ ++r+ +  +a lq++   +   ne  +++l  + +dy
+         DBOU01000137.1_69  30 NRIQKRKelRMKKykTCGFVCILFILILMCMVLLQMETKVRNQSERVAYLQTELNSVINENEDTKKRLM-NMTDY 103
+                               22233334433441133335555555555566999****************997666555666666666.56666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (256 nodes)
+Target sequences:                         2723  (790622 residues searched)
+Passed MSV filter:                       244  (0.0896071); expected 54.5 (0.02)
+Passed bias filter:                      158  (0.0580242); expected 54.5 (0.02)
+Passed Vit filter:                        21  (0.00771208); expected 2.7 (0.001)
+Passed Fwd filter:                         4  (0.00146897); expected 0.0 (1e-05)
+Initial search space (Z):               2723  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.03s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6746.64
+//
+[ok]

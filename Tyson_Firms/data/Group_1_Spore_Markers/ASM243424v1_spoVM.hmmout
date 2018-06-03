@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoVM_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM243424v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM243424v1_spoVM.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM243424v1_spoVM.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PF08183  [M=25]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+      0.001   16.9   0.5     0.0035   15.2   0.5    2.0  1  DJJR01000077.1_135  # 158521 # 159954 # -1 # ID=81_135;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> DJJR01000077.1_135  # 158521 # 159954 # -1 # ID=81_135;partial=00;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.5   8.4e-07    0.0035       2      13 ..     115     126 ..     115     130 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 8.4e-07
+             PF08183   2 KFYTIKLPkFlG 13 
+                         +FY IKLP+FlG
+  DJJR01000077.1_135 115 RFYNIKLPDFLG 126
+                         8**********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (25 nodes)
+Target sequences:                         4121  (1293186 residues searched)
+Passed MSV filter:                       118  (0.0286338); expected 82.4 (0.02)
+Passed bias filter:                       88  (0.021354); expected 82.4 (0.02)
+Passed Vit filter:                        10  (0.0024266); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.00024266); expected 0.0 (1e-05)
+Initial search space (Z):               4121  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.02s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 1616.48
+//
+[ok]

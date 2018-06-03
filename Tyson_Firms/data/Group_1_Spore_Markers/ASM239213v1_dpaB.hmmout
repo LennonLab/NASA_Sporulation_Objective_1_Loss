@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM239213v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM239213v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM239213v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+  ------ inclusion threshold ------
+      0.016   11.2   1.2      0.035   10.1   0.8    2.0  2  DGGJ01000006.1_1  # 1 # 717 # -1 # ID=23_1;partial=10;start_t
+
+
+Domain annotation for each sequence (and alignments):
+>> DGGJ01000006.1_1  # 1 # 717 # -1 # ID=23_1;partial=10;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.423
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.8     2e-05     0.035      80     105 ..      80     105 ..       5     132 .. 0.83
+   2 ?   -3.0   0.0      0.21   3.7e+02     104     129 ..     175     201 ..     171     202 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 2e-05
+         TIGR02852  80 ldvlviaPltGnsmsklanaitdspv 105
+                        +v+ ++P t n + klan+i+d + 
+  DGGJ01000006.1_1  80 AEVIFVVPATANIIGKLANGIADDAP 105
+                       57999****************99653 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 0.21
+         TIGR02852 104 pvlmaakatlrnnkPvvl.aistndal 129
+                       ++ + ak+ l  +k v++ a st +al
+  DGGJ01000006.1_1 175 AIRLQAKSGLLHGKKVIItAGSTREAL 201
+                       566788888777766665155777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         1805  (525183 residues searched)
+Passed MSV filter:                        76  (0.0421053); expected 36.1 (0.02)
+Passed bias filter:                       49  (0.0271468); expected 36.1 (0.02)
+Passed Vit filter:                         3  (0.00166205); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000554017); expected 0.0 (1e-05)
+Initial search space (Z):               1805  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4910.46
+//
+[ok]

@@ -1,0 +1,51 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM240294v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM240294v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM240294v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     0.0091   12.2   0.3      0.027   10.6   0.3    1.8  1  DHGV01000049.1_34  # 29973 # 31172 # -1 # ID=89_34;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DHGV01000049.1_34  # 29973 # 31172 # -1 # ID=89_34;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.3   1.4e-05     0.027      81     111 ..      81     114 ..      70     141 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 1.4e-05
+          TIGR02852  81 dvlviaPltGnsmsklanaitd...spvlmaaka 111
+                        d++viaP t n + k a +i d   s+v+maa +
+  DHGV01000049.1_34  81 DLIVIAPATANILGKAAAGIGDdllSTVIMAATC 114
+                        99******************99666789999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         1999  (561756 residues searched)
+Passed MSV filter:                        39  (0.0195098); expected 40.0 (0.02)
+Passed bias filter:                       32  (0.016008); expected 40.0 (0.02)
+Passed Vit filter:                         1  (0.00050025); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.00050025); expected 0.0 (1e-05)
+Initial search space (Z):               1999  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10504.84
+//
+[ok]

@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAF_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM236938v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM236938v1_spoIIIAF.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM236938v1_spoIIIAF.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XUW1.meta_raw  [M=203]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     0.0014   15.4   0.1      0.002   14.9   0.1    1.3  1  DFET01000063.1_17  # 24513 # 25280 # 1 # ID=23_17;partial=00;
+  ------ inclusion threshold ------
+        1.3    5.7  14.0          2    5.1  14.0    1.3  1  DFET01000063.1_28  # 35301 # 36362 # 1 # ID=23_28;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DFET01000063.1_17  # 24513 # 25280 # 1 # ID=23_17;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.1   2.2e-06     0.002      41     131 ..      23     118 ..      16     193 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 2.2e-06
+  NOG.ENOG410XUW1.meta_raw  41 LlLillilsPilkllgkde.dleeyllsasegeeeak.....eieekaeeleekqedelleeyeqelekqikekleek.tgleve 118
+                               +++i+++++P+l+ ++k++ +++e++  ++  e e k      +e+ +e++ +k + ++++ ye   +++i e l     g   +
+         DFET01000063.1_17  23 FFFIIAFIRPLLRAINKNNeAIAEAQVVHD--EIELKmerlpVLEAYKEKVSKKVDGYAKRYYEVMDSTKIDELLTGYvLGHGLK 105
+                               6789*************9967777755443..4444445678999********************99999999985445555556 PP
+
+  NOG.ENOG410XUW1.meta_raw 119 evkvkieedeesk 131
+                                v++ i+  +es+
+         DFET01000063.1_17 106 AVNLYIDMPKESE 118
+                               6666554333333 PP
+
+>> DFET01000063.1_28  # 35301 # 36362 # 1 # ID=23_28;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1  14.0    0.0022         2      71     201 ..      17     188 ..       2     190 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0022
+  NOG.ENOG410XUW1.meta_raw  71 geeeakeieekaeeleekqedelleeyeq.elekqikekleek..tgleveevkvkieedeeskkfgkiksvevtlke.kkeeee 151
+                               + eea +ie++ + + +++ +e+  ++e+  ++++  e +ee+   + +v+e  v ++e+ ++++ +++++v  ++   +++ ee
+         DFET01000063.1_28  17 SVEEATAIEKQENMITAEETSETAGVVEEsSVAAETTEVAEETteGEQTVAETGVGMSEETAEESAEAVANVAAEIPAeAENAEE 101
+                               4578889999999999999999998888767778888877766324445788889999999999999999999999976665555 PP
+
+  NOG.ENOG410XUW1.meta_raw 152 kpeksve.....kiniee...................................kkeaaeeeeeeikeelakeygveeekIqvqve 196
+                               ++++++      +i   +                                   +k++ae + e+ k++l+++  + ++k+ vq++
+         DFET01000063.1_28 102 TVKEPISkmkahSI---GyaagvgvllilvlirlivmdnhidkletelqeaveAKKTAEMDLEREKTTLEEKIALLSDKVAVQIV 183
+                               55555554444433...144568899999999999999999999999999999888888889999999**************999 PP
+
+  NOG.ENOG410XUW1.meta_raw 197 eeeee 201
+                                +ee+
+         DFET01000063.1_28 184 ADEEA 188
+                               98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (203 nodes)
+Target sequences:                         1879  (656514 residues searched)
+Passed MSV filter:                       302  (0.160724); expected 37.6 (0.02)
+Passed bias filter:                      157  (0.0835551); expected 37.6 (0.02)
+Passed Vit filter:                        30  (0.0159659); expected 1.9 (0.001)
+Passed Fwd filter:                         4  (0.00212879); expected 0.0 (1e-05)
+Initial search space (Z):               1879  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.03s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 2665.45
+//
+[ok]

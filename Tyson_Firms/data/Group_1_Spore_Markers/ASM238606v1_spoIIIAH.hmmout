@@ -1,0 +1,100 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAH_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM238606v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM238606v1_spoIIIAH.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM238606v1_spoIIIAH.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG4111WBG.meta_raw  [M=199]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.3e-51  171.9   9.5    1.5e-51  171.7   9.5    1.0  1  DGES01000129.1_79  # 76019 # 76585 # 1 # ID=109_79;partial=00
+    7.2e-06   22.6  18.4    0.00015   18.3   0.7    4.6  5  DGES01000115.1_12  # 8487 # 10016 # -1 # ID=103_12;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DGES01000129.1_79  # 76019 # 76585 # 1 # ID=109_79;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  171.7   9.5   1.6e-54   1.5e-51       3     194 ..       1     187 [.       1     188 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 171.7 bits;  conditional E-value: 1.6e-54
+  NOG.ENOG4111WBG.meta_raw   3 kifkknqiiilaLalmiavagylnysgkkeskkkkkakeeeedisdda......sseeeeeeeaekeeeeepgeavltsaekeas 81 
+                               +++k++ +++ +L++++++ gyln++++++  + ++ k   + ++dd+      +      +  ++ ++ +++e + +  +++++
+         DGES01000129.1_79   1 MVLKRKSFVVGVLMFLLIMTGYLNFKYNNRVLDYEDDK---NIVQDDKkpdilvK------DLPSDVDKYNEEESNIE--TSSTT 74 
+                               589**************************888777542...23334332333321......22222222332333333..35689 PP
+
+  NOG.ENOG4111WBG.meta_raw  82 effaeakleReqvRsknketLqeiinneniseeskqeAveklleltelaekElaiEnLlkaKGFkdavVsitddsvdVVVnaeeL 166
+                               +ff + + +Re +R k++e +++ii+n+  +e++k eA++++l++t+++ekEl iE L+kaKGF+d++V+++++sv+VVV+++eL
+         DGES01000129.1_79  75 SFFKDFRYDRENTRKKEIEYINNIIDNPGFDENMKVEAQNQILQITNIMEKELSIEGLIKAKGFDDVIVILQENSVNVVVDKKEL 159
+                               ************************************************************************************* PP
+
+  NOG.ENOG4111WBG.meta_raw 167 tdaeraqIeDiVkrkTgvaaenIvItpk 194
+                               + +e+aqI DiVkr+Tg +aenI+I+p+
+         DGES01000129.1_79 160 SAEEVAQILDIVKRETGQQAENIKIIPR 187
+                               *************************997 PP
+
+>> DGES01000115.1_12  # 8487 # 10016 # -1 # ID=103_12;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.4   0.0    0.0059       5.4       6      38 ..      23      56 ..      21     117 .. 0.55
+   2 !    5.2   0.3    0.0017       1.5     156     195 ..     173     216 ..     160     219 .. 0.82
+   3 ?   -3.0   0.2      0.56   5.1e+02     168     168 ..     300     300 ..     258     343 .. 0.49
+   4 !   18.3   0.7   1.7e-07   0.00015     152     195 ..     356     399 ..     354     403 .. 0.94
+   5 !    6.5   0.3   0.00066       0.6      12      67 ..     428     494 ..     422     504 .. 0.32
+
+  Alignments for each domain:
+  == domain 1  score: 3.4 bits;  conditional E-value: 0.0059
+  NOG.ENOG4111WBG.meta_raw  6 kknqiiilaLalm.iavagylnysgkkeskkkkk 38
+                              +kn+iii a++++ i++++ + +++++  +  ++
+         DGES01000115.1_12 23 QKNRIIIGAIIVIvIIIIMLFAFNKTEYVVLYSQ 56
+                              5788888444444144444444444443333333 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.0017
+  NOG.ENOG4111WBG.meta_raw 156 svdVVVnae...eLtdaeraqIeDiVkrkT.gvaaenIvItpkk 195
+                               ++ VVV+ +   e+t+++++ Ie +V+++  g a enI+I+  +
+         DGES01000115.1_12 173 TAAVVVKPKpgyEITPEQAQTIEKLVAKSVpGLAEENISIIDTN 216
+                               5678888763446*************998559********9876 PP
+
+  == domain 3  score: -3.0 bits;  conditional E-value: 0.56
+  NOG.ENOG4111WBG.meta_raw 168 d 168
+                               +
+         DGES01000115.1_12 300 E 300
+                               1 PP
+
+  == domain 4  score: 18.3 bits;  conditional E-value: 1.7e-07
+  NOG.ENOG4111WBG.meta_raw 152 itddsvdVVVnaeeLtdaeraqIeDiVkrkTgvaaenIvItpkk 195
+                               i+d +++VV+++e L+ +   q+ D+V++  g ++ n+ I++++
+         DGES01000115.1_12 356 IEDLTISVVIDSEHLDAQTIEQVRDLVTKAVGTDPANVAIHSME 399
+                               78899***********************************9986 PP
+
+  == domain 5  score: 6.5 bits;  conditional E-value: 0.00066
+  NOG.ENOG4111WBG.meta_raw  12 ilaLalmiavagylnysgkkeskkkkkak......eeeedisdda.........sseeeeeeeaekeeeee 67 
+                               i+++ l +av++ + ys+k+ +++ + a+      e   + +dd+         +++++++++ e+  +e+
+         DGES01000115.1_12 428 IIVVSLAVAVIMLVFYSKKRYKEQLEYASlktmtmE---E-NDDEtleqidldtEAKNKAKRQIENLVTEN 494
+                               333333344444443444443322222212222221...1.111122222222111112222333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (199 nodes)
+Target sequences:                         1811  (527743 residues searched)
+Passed MSV filter:                       176  (0.0971839); expected 36.2 (0.02)
+Passed bias filter:                       98  (0.0541137); expected 36.2 (0.02)
+Passed Vit filter:                        13  (0.00717835); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00110436); expected 0.0 (1e-05)
+Initial search space (Z):               1811  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5251.04
+//
+[ok]

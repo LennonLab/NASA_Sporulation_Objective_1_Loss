@@ -1,0 +1,107 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yunB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM242376v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM242376v1_yunB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM242376v1_yunB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410ZYAS.meta_raw  [M=256]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.7e-58  194.7  12.2    3.2e-58  194.5  12.2    1.0  1  DIOA01000028.1_35  # 36727 # 37341 # 1 # ID=96_35;partial=00;
+     0.0074   13.0   4.5       0.27    7.9   0.4    2.4  2  DIOA01000072.1_52  # 50260 # 51792 # -1 # ID=71_52;partial=00
+  ------ inclusion threshold ------
+       0.17    8.6   4.4       0.24    8.0   0.2    2.5  3  DIOA01000047.1_25  # 25317 # 26057 # 1 # ID=16_25;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DIOA01000028.1_35  # 36727 # 37341 # 1 # ID=96_35;partial=00;start_type=TTG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  194.5  12.2   2.4e-61   3.2e-58      35     231 ..       2     197 ..       1     203 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 194.5 bits;  conditional E-value: 2.4e-61
+  NOG.ENOG410ZYAS.meta_raw  35 ilvliivilillliildrelrptlmaiaelqakqiateaIneaiaeqlatkqidyedLvavkkdedGkivsiqlntieinrlaae 119
+                               ++++++v+ ++++++++ ++rptl +i+e+qak ia ++Ine ++++l++ +   ++++   +d++Gki +i+++ + +n++ ++
+         DIOA01000028.1_35   2 VIIILLVFALITYYYIEVNIRPTLGSICEIQAKVIASRIINETVRDELNR-DSIKDQILIPSYDKQGKINMIRTDAMIMNNISNN 85 
+                               455555666667*************************************5.7777999999************************ PP
+
+  NOG.ENOG410ZYAS.meta_raw 120 itarvqdaLkeieelpvkiPLGqltgsrllanlGPkipvkvlpiGsVkvdldsefeeaGINqtlhevyldveaevqiviPfaeee 204
+                               i+++vq+++ ++e+++++iPL ++++s+lla  GP++++++l +GsV vd+ +efee GINqt+ ++y++ve++++++ P ++ +
+         DIOA01000028.1_35  86 IAKNVQQKIVKLEQQQFTIPLFTALDSQLLAGKGPNLNFSILHQGSVLVDFVTEFEESGINQTRYKIYITVEVDMRVISPVTTSS 170
+                               ************************************************************************************* PP
+
+  NOG.ENOG410ZYAS.meta_raw 205 vvVateipiaetvivGeVPesyvdvpg 231
+                                +V++++ iae vivGeVPesy+++p+
+         DIOA01000028.1_35 171 LTVKNNVLIAEIVIVGEVPESYMNFPS 197
+                               ************************997 PP
+
+>> DIOA01000072.1_52  # 50260 # 51792 # -1 # ID=71_52;partial=00;start_type=TTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.9   0.4    0.0002      0.27      33      79 ..       4      50 ..       1      59 [. 0.90
+   2 !    6.3   0.3   0.00062      0.81      52      93 ..     166     207 ..     159     217 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.0002
+  NOG.ENOG410ZYAS.meta_raw 33 liilvliivilillliildrelrptlmaiaelqakqiateaIneaia 79
+                              +i++++ ++i i++ ii+ +++ +  +  ae +ak+i+ +a+++a +
+         DIOA01000072.1_52  4 VIVGIICALIGIVIGIIIRKNISESKIGSAEEEAKRIIDDAVKDAET 50
+                              58899999999999****************************99855 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.00062
+  NOG.ENOG410ZYAS.meta_raw  52 relrptlmaiaelqakqiateaIneaiaeqlatkqidyedLv 93 
+                               +e++    + ae +a++i+t aI++  a+ +a+  +++ dL 
+         DIOA01000072.1_52 166 KEIEREAKETAERKAREIITYAIQKCSADHVAETTVSVVDLP 207
+                               6778888899**********************8777777765 PP
+
+>> DIOA01000047.1_25  # 25317 # 26057 # 1 # ID=16_25;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.1     0.013        17      26      53 ..       6      34 ..       1      50 [. 0.57
+   2 ?   -3.2   0.0      0.52   6.8e+02     114     135 ..      58      79 ..      56      95 .. 0.79
+   3 ?    8.0   0.2   0.00019      0.24      87     134 ..     164     211 ..     131     225 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.013
+  NOG.ENOG410ZYAS.meta_raw 26 rprrivlliilvliivilill.liildre 53
+                              +++ +++liil+++i +++++ li+   +
+         DIOA01000047.1_25  6 MKKTFKILIILLIVITCVAAGlLIWQSDN 34
+                              33445555555555555555435554444 PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 0.52
+  NOG.ENOG410ZYAS.meta_raw 114 nrlaaeitarvqdaLkeieelp 135
+                               n+l++e+ + v++ +++i+ ++
+         DIOA01000047.1_25  58 NKLKTEVEKYVSRPIEDISAED 79 
+                               7888888888888888887755 PP
+
+  == domain 3  score: 8.0 bits;  conditional E-value: 0.00019
+  NOG.ENOG410ZYAS.meta_raw  87 idyedLvavkkdedGkivsiqlntieinrlaaeitarvqdaLkeieel 134
+                                +y++L + k+++dGk  +++ n   + +l ++  ++v + L+++ee+
+         DIOA01000047.1_25 164 KEYKNLPKEKQNKDGKYKILMDNLDSVAKLEKKCDDEVAKVLSDLEEE 211
+                               4899999*************************************9985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (256 nodes)
+Target sequences:                         3935  (1173792 residues searched)
+Passed MSV filter:                       347  (0.088183); expected 78.7 (0.02)
+Passed bias filter:                      212  (0.0538755); expected 78.7 (0.02)
+Passed Vit filter:                        14  (0.00355781); expected 3.9 (0.001)
+Passed Fwd filter:                         3  (0.000762389); expected 0.0 (1e-05)
+Initial search space (Z):               3935  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 10016.36
+//
+[ok]

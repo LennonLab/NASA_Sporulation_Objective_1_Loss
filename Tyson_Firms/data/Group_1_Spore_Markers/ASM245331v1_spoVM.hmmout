@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoVM_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM245331v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM245331v1_spoVM.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM245331v1_spoVM.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       PF08183  [M=25]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+  ------ inclusion threshold ------
+        1.7    6.4   7.1        4.2    5.1   0.5    3.0  2  DKGO01000090.1_53  # 55667 # 56302 # -1 # ID=119_53;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> DKGO01000090.1_53  # 55667 # 56302 # -1 # ID=119_53;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.5    0.0012       4.2      12      21 ..      30      39 ..      29      41 .. 0.92
+   2 ?    3.2   1.2    0.0048        17      12      22 ..     163     173 ..     162     174 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0012
+            PF08183 12 lGGfVralLg 21
+                       +GG+++++L+
+  DKGO01000090.1_53 30 IGGIIGKILF 39
+                       7********8 PP
+
+  == domain 2  score: 3.2 bits;  conditional E-value: 0.0048
+            PF08183  12 lGGfVralLgs 22 
+                        lGG+V+ l+gs
+  DKGO01000090.1_53 163 LGGVVGGLIGS 173
+                        8*******997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (25 nodes)
+Target sequences:                         3468  (984639 residues searched)
+Passed MSV filter:                        93  (0.0268166); expected 69.4 (0.02)
+Passed bias filter:                       60  (0.017301); expected 69.4 (0.02)
+Passed Vit filter:                         5  (0.00144175); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000288351); expected 0.0 (1e-05)
+Initial search space (Z):               3468  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.02
+# Mc/sec: 1230.80
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAF_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM235985v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM235985v1_spoIIIAF.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM235985v1_spoIIIAF.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XUW1.meta_raw  [M=203]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    0.00011   20.0  13.1     0.0013   16.5   9.4    2.1  2  DENZ01000032.1_57  # 52300 # 52737 # -1 # ID=30_57;partial=00
+     0.0076   13.9   6.5       0.29    8.8   0.3    2.5  2  DENZ01000005.1_49  # 49697 # 51169 # 1 # ID=45_49;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DENZ01000032.1_57  # 52300 # 52737 # -1 # ID=30_57;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   9.4   7.3e-07    0.0013       6      65 ..       2      61 ..       1      93 [. 0.81
+   2 !    6.4   0.2   0.00088       1.6     121     193 ..      78     144 ..      62     145 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 7.3e-07
+  NOG.ENOG410XUW1.meta_raw  6 yeWiknivlililatvvelLLPdkkykkYvrfvlGLlLillilsPilkllgkdedleeyl 65
+                              ++ i ni+++++++ +++++ P++k +k++r+++ +++++ il  i+   + + ++++ l
+         DENZ01000032.1_57  2 KNTIINIIILILMFNIIMIIFPEGKTQKFCRIAIKIFIMIYILDNIFLNGSININILSDL 61
+                              67799**************************************99998877777777664 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.00088
+  NOG.ENOG410XUW1.meta_raw 121 kvkieedeesk....kfgkiksvevtlkekkeeeekpeksve.kinieekkeaaeeeeeeikeelakeygveeekIqv 193
+                               + +i e+ ++     +   +ks+++ ++e          +++ +i+   +k  +  e++ +k+ +a+ +++e+e+I +
+         DENZ01000032.1_57  78 DDDIIESINKDyfegD-DVVKSISLSFTE--------DMDIKaEITL--NKLLSFDEANVLKTNIADIFHIESENIYI 144
+                               4444444444422111.235555555551........1111122323..34456678899****************98 PP
+
+>> DENZ01000005.1_49  # 49697 # 51169 # 1 # ID=45_49;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   1.0   0.00036      0.64     164     196 ..     106     158 ..      72     162 .. 0.66
+   2 !    8.8   0.3   0.00017      0.29     164     201 ..     304     372 ..     239     374 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.00036
+  NOG.ENOG410XUW1.meta_raw 164 e....................kkeaaeeeeeeikeelakeygveeekIqvqve 196
+                                                    +++++++  +ei++ l++ y+++ +kI+  +e
+         DENZ01000005.1_49 106 HynvepdygiltgvrvikiliTAKNNSKSDDEINRILKDTYEIKNDKIKLLWE 158
+                               022223334444555666888889999**********************9986 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.00017
+  NOG.ENOG410XUW1.meta_raw 164 e...............................kkeaaeeeeeeikeelakeygveeekIqvqveeeeee 201
+                               +                                   + e+e+++++++ +  ++++e+I+v+    +++
+         DENZ01000005.1_49 304 TlkligrshtiddviqkyklskeigfainmdvILGLTGEDESDVRNTITEIVKLKPENITVHSLSYKKK 372
+                               13344444455555556666666777777777445677899********************99887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (203 nodes)
+Target sequences:                         3520  (1063515 residues searched)
+Passed MSV filter:                       458  (0.130114); expected 70.4 (0.02)
+Passed bias filter:                      204  (0.0579545); expected 70.4 (0.02)
+Passed Vit filter:                        34  (0.00965909); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000852273); expected 0.0 (1e-05)
+Initial search space (Z):               3520  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.03s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 3598.23
+//
+[ok]

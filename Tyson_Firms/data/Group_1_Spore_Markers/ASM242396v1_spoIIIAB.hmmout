@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIIAB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM242396v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM242396v1_spoIIIAB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM242396v1_spoIIIAB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG4111UDG.meta_raw  [M=172]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.5e-45  151.3   0.2    2.8e-45  151.2   0.2    1.0  1  DIOR01000005.1_59  # 52306 # 52818 # -1 # ID=3_59;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DIOR01000005.1_59  # 52306 # 52818 # -1 # ID=3_59;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.2   0.2   1.4e-48   2.8e-45       1     172 []       1     170 [.       1     170 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 151.2 bits;  conditional E-value: 1.4e-48
+  NOG.ENOG4111UDG.meta_raw   1 mlkllgavlillastllGfllaerlkkRpkqlrelksalqlLetEIvYgatpLpealekiakklekplsklfeeaaekLkkeege 85 
+                               ml+ll ++li+++s++lGf++a  +++Rp+qlr+l+ al++L +EI++ +tpLp+ l+ +a+++ +p+++lf ++a+ L   +g 
+         DIOR01000005.1_59   1 MLRLLASALIVASSSGLGFAVAGGYRHRPRQLRQLQFALTVLGSEIRFRQTPLPQGLQVVASTVGGPVGQLFDDLATVLIGAQGR 85 
+                               89*********************************************************************************** PP
+
+  NOG.ENOG4111UDG.meta_raw  86 saeeaweealkelkkelaLkkedleiLlqlgktLGesdredQekhiklaleqLkkeeeeaeeeqkkneklykslGvllGllivil 170
+                               s++ aw++   +  + laL+++d+++L++l++ LG   +++Q ++++l +e+L++ e+eae ++k nek++++lGv+ G+++v++
+         DIOR01000005.1_59  86 SVSWAWQQV--KPCRGLALTSQDQALLARLAQVLGAGTIDEQVRQLELHMEHLQQLEQEAERARKANEKIWRYLGVFSGIALVLI 168
+                               ******875..45799********************************************************************9 PP
+
+  NOG.ENOG4111UDG.meta_raw 171 ll 172
+                               ll
+         DIOR01000005.1_59 169 LL 170
+                               96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (172 nodes)
+Target sequences:                         2062  (642457 residues searched)
+Passed MSV filter:                       133  (0.0645005); expected 41.2 (0.02)
+Passed bias filter:                       93  (0.0451018); expected 41.2 (0.02)
+Passed Vit filter:                         6  (0.0029098); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000484966); expected 0.0 (1e-05)
+Initial search space (Z):               2062  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.03s 00:00:00.04 Elapsed: 00:00:00.01
+# Mc/sec: 11050.26
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yunB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM244839v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM244839v1_yunB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM244839v1_yunB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410ZYAS.meta_raw  [M=256]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+     0.0015   14.5   0.1     0.0016   14.4   0.1    1.1  1  DJXS01000075.1_5  # 3929 # 4459 # 1 # ID=74_5;partial=00;star
+
+
+Domain annotation for each sequence (and alignments):
+>> DJXS01000075.1_5  # 3929 # 4459 # 1 # ID=74_5;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.1     7e-07    0.0016      15      98 ..      60     145 ..       9     172 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 7e-07
+  NOG.ENOG410ZYAS.meta_raw  15 da..rkadarrrp......rprrivlliilvliivilillliildrelrptlmaiaelqakqiateaIneaiaeqlatkqidyed 91 
+                               ++  r     r +      + r   +l +lv+++ + ++++i l   + +t  +i+ l+ +    +a n+ + +q+   ++d e+
+          DJXS01000075.1_5  60 RMvaR-----RSRehamqmNLRYAAFLASLVVVLTLCLVGYIKLKADISDTNKQISSLESQLTELRASNNEVYNQIV-GNVDLEE 138
+                               22111.....111334433334467778888888888888*************************************.8*****9 PP
+
+  NOG.ENOG410ZYAS.meta_raw  92 Lvavkkd 98 
+                               + ++  +
+          DJXS01000075.1_5 139 IRRIAIE 145
+                               9777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (256 nodes)
+Target sequences:                         2257  (722694 residues searched)
+Passed MSV filter:                       120  (0.0531679); expected 45.1 (0.02)
+Passed bias filter:                      101  (0.0447497); expected 45.1 (0.02)
+Passed Vit filter:                         7  (0.00310146); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000886132); expected 0.0 (1e-05)
+Initial search space (Z):               2257  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.03
+# Mc/sec: 6166.99
+//
+[ok]

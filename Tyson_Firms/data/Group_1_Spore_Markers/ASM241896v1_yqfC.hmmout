@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yqfC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM241896v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM241896v1_yqfC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM241896v1_yqfC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XV43.meta_raw  [M=94]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    9.8e-27   89.3   1.5      1e-26   89.2   1.5    1.0  1  DIFD01000022.1_140  # 152001 # 152282 # -1 # ID=1_140;partial
+    2.3e-09   33.6   1.0    3.3e-09   33.1   1.0    1.1  1  DIFD01000018.1_235  # 243934 # 244218 # -1 # ID=10_235;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> DIFD01000022.1_140  # 152001 # 152282 # -1 # ID=1_140;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   89.2   1.5   1.1e-29     1e-26       7      89 ..       4      86 ..       1      91 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 89.2 bits;  conditional E-value: 1.1e-29
+  NOG.ENOG410XV43.meta_raw  7 eklkeklaealelPkdvvldlpritliGnlelvienhrGileytdelvrvqtkkgqlevtGkeLvieeitneellieGkiesl 89
+                              +k+k++++++le+P++++ld+ r+tl+Gn +lvienh+Gi +y+++++  + ++g ++++Gk+Lv+++++++el ieG ie++
+        DIFD01000022.1_140  4 KKFKKTMTSVLEMPEEIILDVMRLTLVGNGNLVIENHKGICSYAEDKIVFRNNHGDVQIEGKHLVLTQLQSDELHIEGMIEKI 86
+                              799******************************************************************************98 PP
+
+>> DIFD01000018.1_235  # 243934 # 244218 # -1 # ID=10_235;partial=00;start_type=ATG;rbs_motif=AGGAG/GGAGG;rbs_spacer=11-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   1.0   3.7e-12   3.3e-09      29      89 ..       8      70 ..       5      74 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 33.1 bits;  conditional E-value: 3.7e-12
+  NOG.ENOG410XV43.meta_raw 29 ritliGnlelvienhrGileytdelvrvqtkkgqlevtGkeLvieeit..neellieGkiesl 89
+                              +it+i +++lv+   +G+ +++++++ ++t+ g l +tG++L i++++    e+ i+G+i+sl
+        DIFD01000018.1_235  8 QITMIDRNQLVMMGVKGVESFDNAKILLSTNMGDLLITGEDLHISHLDlvGGEIRINGQIDSL 70
+                              79******************************************98753379********998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (94 nodes)
+Target sequences:                         1811  (558541 residues searched)
+Passed MSV filter:                        52  (0.0287134); expected 36.2 (0.02)
+Passed bias filter:                       38  (0.0209829); expected 36.2 (0.02)
+Passed Vit filter:                         3  (0.00165654); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00110436); expected 0.0 (1e-05)
+Initial search space (Z):               1811  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 5250.29
+//
+[ok]

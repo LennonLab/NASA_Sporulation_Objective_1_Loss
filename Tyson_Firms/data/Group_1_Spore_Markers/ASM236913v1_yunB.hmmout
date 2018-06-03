@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yunB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM236913v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM236913v1_yunB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM236913v1_yunB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410ZYAS.meta_raw  [M=256]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    2.8e-05   19.5   0.5    3.3e-05   19.3   0.5    1.1  1  DFEY01000003.1_283  # 328375 # 328830 # 1 # ID=1_283;partial=
+
+
+Domain annotation for each sequence (and alignments):
+>> DFEY01000003.1_283  # 328375 # 328830 # 1 # ID=1_283;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.5   2.3e-08   3.3e-05      25     101 ..      39     122 ..       3     134 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 2.3e-08
+  NOG.ENOG410ZYAS.meta_raw  25 p........rprrivlliilvliivilillliildrelrptlmaiaelqakqiateaIneaiaeqlatkqidyedLvavkkdedG 101
+                               +        +  ++ ++ i+ +++ ++i+ +++l   + +t  +iae++++  ++++ n+a +  ++    d e++ +v +++ G
+        DFEY01000003.1_283  39 KkmksaysiNAGSVLFITIIGILCGATIMAYLFLHSSISETRNNIAEIKTNINTVQSQNDALKYSIN-TYQDSENVYKVATKKLG 122
+                               133444443333566655666666678888*************************************.58999999998887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (256 nodes)
+Target sequences:                         1414  (501647 residues searched)
+Passed MSV filter:                       158  (0.11174); expected 28.3 (0.02)
+Passed bias filter:                      104  (0.0735502); expected 28.3 (0.02)
+Passed Vit filter:                        12  (0.00848656); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000707214); expected 0.0 (1e-05)
+Initial search space (Z):               1414  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6421.08
+//
+[ok]

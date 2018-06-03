@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM239791v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM239791v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM239791v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.1e-67  224.2   0.1    1.3e-67  223.9   0.1    1.0  1  DHBQ01000118.1_83  # 83454 # 84233 # -1 # ID=36_83;partial=00
+    4.8e-06   23.2   2.7    1.2e-05   21.8   2.0    2.1  2  DHBQ01000128.1_14  # 10342 # 11556 # -1 # ID=151_14;partial=0
+
+
+Domain annotation for each sequence (and alignments):
+>> DHBQ01000118.1_83  # 83454 # 84233 # -1 # ID=36_83;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  223.9   0.1   1.1e-70   1.3e-67       1     163 [.       6     168 ..       6     175 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 223.9 bits;  conditional E-value: 1.1e-70
+          TIGR02852   1 kriGfgltgshctleavlpkleklveegaevvpivsetvkttetrfGegadwikkieeitgkkaiktiveaePlGPkkkldvlviaPltGns 92 
+                        k iG+++tgs ct+++v+p++eklv+ega+v pi+se+v t +trfG++ad    +e itgk+ i t++e+ePlGP k ld lviaP+tGn+
+  DHBQ01000118.1_83   6 KTIGMAITGSFCTIPQVFPEIEKLVAEGADVYPILSEKVATQNTRFGKAADIACALERITGKEPILTVAEVEPLGPTKVLDALVIAPCTGNT 97 
+                        68****************************************************************************************** PP
+
+          TIGR02852  93 msklanaitdspvlmaakatlrnnkPvvlaistndalGlnaknlarllaakniyfvPfgqddpvkkPnslv 163
+                        ++kla +itd pvlmaak+t+rn +Pv+++istnd+l  naknl+++l++k iy +Pfgqd+p  kP sl+
+  DHBQ01000118.1_83  98 LAKLAYGITDGPVLMAAKSTMRNLRPVIIGISTNDGLSANAKNLGAILNTKYIYVIPFGQDAPLVKPCSLT 168
+                        *********************************************************************97 PP
+
+>> DHBQ01000128.1_14  # 10342 # 11556 # -1 # ID=151_14;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.8   2.0   9.9e-09   1.2e-05      73     133 ..      73     130 ..       4     142 .. 0.69
+   2 ?   -3.0   0.0      0.41   5.1e+02      48      72 ..     166     194 ..     158     226 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 21.8 bits;  conditional E-value: 9.9e-09
+          TIGR02852  73 PlGPkkkldvlviaPltGnsmsklanaitd...spvlmaakatlrnnkPvvlaistndalGlna 133
+                         +   k+ d+lv+aP t n + k+a++i+d   ++v+ma+ka      Pv+l  s n+a+ ln 
+  DHBQ01000128.1_14  73 HVSLAKRADILVVAPTTANCLGKVAHGIADdllTTVVMATKA------PVLLVPSMNEAMYLNP 130
+                        55566789*********************9444467788776......8999999999998884 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 0.41
+          TIGR02852  48 egadwikkieei....tgkkaiktiveae 72 
+                        e++d + +ie i    t+ k ++ +v a 
+  DHBQ01000128.1_14 166 EPEDIVSEIERIllkgTTLKDVTVLVTAG 194
+                        55566666665533223333444444433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         2477  (736028 residues searched)
+Passed MSV filter:                        49  (0.019782); expected 49.5 (0.02)
+Passed bias filter:                       41  (0.0165523); expected 49.5 (0.02)
+Passed Vit filter:                         6  (0.00242229); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000807428); expected 0.0 (1e-05)
+Initial search space (Z):               2477  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6881.86
+//
+[ok]

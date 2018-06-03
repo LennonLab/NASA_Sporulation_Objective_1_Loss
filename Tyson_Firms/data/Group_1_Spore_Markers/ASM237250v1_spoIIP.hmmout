@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIP_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM237250v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM237250v1_spoIIP.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM237250v1_spoIIP.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410ZNVS.meta_raw  [M=477]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     0.0093   11.7   1.6      0.054    9.2   0.2    2.4  3  DFGY01000105.1_17  # 14512 # 15786 # 1 # ID=9_17;partial=00;s
+
+
+Domain annotation for each sequence (and alignments):
+>> DFGY01000105.1_17  # 14512 # 15786 # 1 # ID=9_17;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0      0.03        57      43      71 ..      23      50 ..       4     131 .. 0.45
+   2 !    9.2   0.2   2.8e-05     0.054     384     461 ..     199     277 ..     176     286 .. 0.59
+   3 !    3.9   0.1    0.0011       2.1      37      98 ..     272     339 ..     262     406 .. 0.41
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.03
+  NOG.ENOG410ZNVS.meta_raw 43 lltlaklllllavllllllllll.gg.pada 71
+                              +l ++ ++ll+a + ++l+  ++ g+ ++ +
+         DFGY01000105.1_17 23 FLIISCTMLLTATF-CMLI--MMtGTrTVLQ 50
+                              22333333333322.2222..2213232222 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 2.8e-05
+  NOG.ENOG410ZNVS.meta_raw 384 apkeillllgvvlvgvvaflllsagslekakeklkkflekefasllgkkkkkkkkeekkkekkkkakak.qatdreeee 461
+                                +k+++ ++++ ++++v+ + +s g ++++++  +++ +k  +s+++ + ++k ++e+k++k++++ +  ++++r++++
+         DFGY01000105.1_17 199 RSKSMVPVMIAGVLAFVIVVAISPGEFKSISKADENLRDKLATSTVSIQGNEKASSESKNNKENRQGKGsAKKNRQADN 277
+                               4556667777778888999999***999988776777777777766666555555554444444333321222332222 PP
+
+  == domain 3  score: 3.9 bits;  conditional E-value: 0.0011
+  NOG.ENOG410ZNVS.meta_raw  37 krrrkk.lltlaklllllavllllllllllgg..padaae......svllleas...teaae.kg..iavlaas.pgi 98 
+                               +r++ +  ++++k++++l ++ll +++l++++  + d+ e      +          ++  + ++  +a+++ + +++
+         DFGY01000105.1_17 272 NRQA-DnEKKYMKIWIVLGLILLTAMILFIPAviH-DRLEkkrkknR------KdldSQ--DpGQaiRAMFPYAvKWL 339
+                               2222.333455555444433333333333333332.22111111111......112111..11112234444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (477 nodes)
+Target sequences:                         1901  (603798 residues searched)
+Passed MSV filter:                       217  (0.11415); expected 38.0 (0.02)
+Passed bias filter:                      143  (0.0752236); expected 38.0 (0.02)
+Passed Vit filter:                        25  (0.013151); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000526039); expected 0.0 (1e-05)
+Initial search space (Z):               1901  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7200.29
+//
+[ok]

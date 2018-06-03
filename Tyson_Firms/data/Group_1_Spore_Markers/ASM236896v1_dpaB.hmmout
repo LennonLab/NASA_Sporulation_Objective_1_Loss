@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM236896v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM236896v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM236896v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    0.00016   18.1   0.2     0.0003   17.2   0.1    1.5  1  DFDZ01000050.1_60  # 60617 # 61174 # 1 # ID=20_60;partial=00;
+     0.0009   15.6   0.2     0.0021   14.4   0.2    1.7  1  DFDZ01000069.1_10  # 10301 # 11500 # -1 # ID=42_10;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DFDZ01000050.1_60  # 60617 # 61174 # 1 # ID=20_60;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.1   2.7e-07    0.0003      79     173 ..      77     169 ..      59     175 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 2.7e-07
+          TIGR02852  79 kldvlviaPltGnsmsklanaitdspvlmaakatlrnnkPvvlaistndalGlnaknlarllaakniyfvPfgqddpvkkPnslvakldlle 170
+                         +d ++i+P+t  +++ +a +  ++ +l aa   +++n+ ++l         +  +n+ +l  +  i + P       + P++l a++++++
+  DFDZ01000050.1_60  77 LVDGMIIVPCTMKTLAGIASGYCENLLLRAADVCIKENRKLLLVPREMPFSKIHLRNMKELADCGAIIMPPVM--TFYNTPTTLEAQVNHIV 166
+                        6899************************************999776666666777777777777777766654..35566777777777666 PP
+
+          TIGR02852 171 dti 173
+                        + i
+  DFDZ01000050.1_60 167 NKI 169
+                        655 PP
+
+>> DFDZ01000069.1_10  # 10301 # 11500 # -1 # ID=42_10;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.2   1.9e-06    0.0021      24     104 ..      27     105 ..       5     122 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 1.9e-06
+          TIGR02852  24 lveegaevvpivsetvkttetrfGegadwikkieeitgkkaikti..veaePlGPkkkldvlviaPltGnsmsklanaitdsp 104
+                        l + ga+v+ ++++      t f  +  + +  ++  + ++       ++  +G  +  d+++iaP t n ++k+a++i+d  
+  DFDZ01000069.1_10  27 LKKSGANVKIMMTKH----ATEFVSPRTFQEITNNAVSVEMFGDAanFHVAHIGLANFADLILIAPATANFLAKMAHGIADDL 105
+                        444555555544433....2334444444333333333333322211346678999999*********************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         2222  (767536 residues searched)
+Passed MSV filter:                        73  (0.0328533); expected 44.4 (0.02)
+Passed bias filter:                       55  (0.0247525); expected 44.4 (0.02)
+Passed Vit filter:                         6  (0.00270027); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.00090009); expected 0.0 (1e-05)
+Initial search space (Z):               2222  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.05
+# Mc/sec: 2870.58
+//
+[ok]

@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  spoIIM_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM239964v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM239964v1_spoIIM.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM239964v1_spoIIM.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.COG1300.meta_raw  [M=676]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    8.9e-30  101.0  19.8    9.6e-30  100.9  19.8    1.0  1  DHEA01000016.1_10  # 13089 # 13685 # -1 # ID=74_10;partial=00
+    1.1e-20   70.9  20.6    1.2e-20   70.8  20.6    1.0  1  DHEA01000071.1_43  # 42129 # 42770 # -1 # ID=36_43;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DHEA01000016.1_10  # 13089 # 13685 # -1 # ID=74_10;partial=00;start_type=TTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.9  19.8   7.6e-33   9.6e-30     197     373 ..       4     195 ..       1     198 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 100.9 bits;  conditional E-value: 7.6e-33
+  NOG.COG1300.meta_raw 197 krelpralrrlrkllllslllFllsiiigallv..dpdfaesll...vketg......gee..spnatmflgiflnNlkvalltfllGl 272
+                           +r + + ++++r  ll++ +lF+ s+++g+l+    p+ a+ ll   +   +      ++   +p    + +if+nN++v +++++++ 
+     DHEA01000016.1_10   4 LRYWHAIIKEHRLFLLVASVLFFGSLVAGVLVGllIPETAAALLeklI---QplgemaESLrnKPLYIRAAYIFFNNARVMIMMLVGAY 89 
+                           67789999***9889989999988888888755786666666655655...233354432134566789******************** PP
+
+  NOG.COG1300.meta_raw 273 llgigtllilifNGillGvvlgffven.l..lleflllilPHGiiEipaillagaaGlrlgrgllfpgr...srl..alreaarralkl 353
+                           l g+++ l+l+ NG+l+G +++  v   +  l+ fl++++PHG++Eipaill+g +Glr+++ l+  +    ++   ++   +r+ l +
+     DHEA01000016.1_10  90 LGGLIPPLVLLANGFLIGLFGSSPVMTeGigLAGFLAALAPHGVFEIPAILLSGMLGLRIAKELWSGLLgrpTETlgRV---SRQILGF 175
+                           ***********************99998632346******************************998855664433445...8888888 PP
+
+  NOG.COG1300.meta_raw 354 llglvplLliAAfIEafvTp 373
+                             ++++lLl AA++E +v+ 
+     DHEA01000016.1_10 176 SPLMILLLLAAAILEIYVSA 195
+                           88999*************85 PP
+
+>> DHEA01000071.1_43  # 42129 # 42770 # -1 # ID=36_43;partial=00;start_type=GTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_co
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.8  20.6   9.4e-24   1.2e-20     194     382 ..       4     212 ..       1     213 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 70.8 bits;  conditional E-value: 9.4e-24
+  NOG.COG1300.meta_raw 194 v.fwkrelpralrrlrkllllslllFllsiiigallv...dpdfaesll.....vketg......geespnatmflgiflnNlkvallt 267
+                           +  +k+++  ++ ++  ++++++++++++i++gal+v   +p +  +l      +   +      +   +   +  + +l+ ++  +l+
+     DHEA01000071.1_43   4 WlKMKQQIGDYISNHATYFIVATVMLVMGIVFGALAVkilNPGQRGELWqylaaF---FdkmdsrE-TIAAPILLRNSLLGHFRTLALI 88 
+                           44567788999999*********************99999777755553332242...23332321.1222345555666666667777 PP
+
+  NOG.COG1300.meta_raw 268 fllGl.llgig.tllilifNGillGvvlgffven.l...lleflllilPHGiiEipaillagaaGlrlgrgllfpgr.srl..alreaa 347
+                            +lGl ++g + +ll+l+ +G+++G+ +gf+v++ +    l++++++lP++ +  pa+ll+++a l ++++l++     r   +l   +
+     DHEA01000071.1_43  89 TVLGLsVIGSPlILLFLFTRGFVIGFSVGFLVDQiVfkgVLLSIVAVLPQNFLIVPALLLSSVACLDFSIILVRGRLkNRGmdRL-HDL 176
+                           788887899999**********************97554459******************************8877554444433.568 PP
+
+  NOG.COG1300.meta_raw 348 rralklllglvplLliAAfIEafvTpsi.plllkla 382
+                           ++    +l++ ++L++A +IEa+++p + +l+ +++
+     DHEA01000071.1_43 177 MATGGAVLVSGIILILASLIEAYISPAFlSLFGRWL 212
+                           999999999******************988888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (676 nodes)
+Target sequences:                         2515  (769381 residues searched)
+Passed MSV filter:                       256  (0.101789); expected 50.3 (0.02)
+Passed bias filter:                       98  (0.0389662); expected 50.3 (0.02)
+Passed Vit filter:                        16  (0.00636183); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000795229); expected 0.0 (1e-05)
+Initial search space (Z):               2515  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.03s 00:00:00.07 Elapsed: 00:00:00.04
+# Mc/sec: 13002.54
+//
+[ok]

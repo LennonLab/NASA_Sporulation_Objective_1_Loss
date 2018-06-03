@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yqfC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM239851v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM239851v1_yqfC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM239851v1_yqfC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XV43.meta_raw  [M=94]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.7e-27   91.4   0.1    3.2e-27   91.2   0.1    1.0  1  DGZL01000053.1_43  # 39146 # 39448 # 1 # ID=86_43;partial=00;
+    1.5e-07   28.1   0.5    1.9e-07   27.8   0.5    1.1  1  DGZL01000029.1_5   # 2511 # 2801 # -1 # ID=125_5;partial=00;s
+
+
+Domain annotation for each sequence (and alignments):
+>> DGZL01000053.1_43  # 39146 # 39448 # 1 # ID=86_43;partial=00;start_type=GTG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   91.2   0.1   2.8e-30   3.2e-27       8      90 ..      12      94 ..       6      97 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 91.2 bits;  conditional E-value: 2.8e-30
+  NOG.ENOG410XV43.meta_raw  8 klkeklaealelPkdvvldlpritliGnlelvienhrGileytdelvrvqtkkgqlevtGkeLvieeitneellieGkiesle 90
+                              + ke++ae++elP+d +ld+pri++iGn el+ienh Gi+eyt+  v ++t kg+++v+Gk+L+i++it+  + ++Gkie+l 
+         DGZL01000053.1_43 12 RAKERIAEFFELPRDSILDVPRIVVIGNAELSIENHLGIIEYTSGSVVIATVKGSVTVRGKDLAISSITKTLVGVQGKIEHLD 94
+                              689*****************************************************************************986 PP
+
+>> DGZL01000029.1_5  # 2511 # 2801 # -1 # ID=125_5;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.8   0.5   1.6e-10   1.9e-07      29      93 ..      15      81 ..      12      82 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 27.8 bits;  conditional E-value: 1.6e-10
+  NOG.ENOG410XV43.meta_raw 29 ritliGnlelvienhrGileytdelvrvqtkkgqlevtGkeLvieeitne..ellieGkiesleylk 93
+                              ++t++ +  +v++    + +++d++v ++t++g l ++G+++ i++++ +  +l+ieG +  ley +
+          DGZL01000029.1_5 15 KLTITEREAVVVDGVNNVESFDDQEVILETTSGMLILHGRDFHIKQLNLDqgNLIIEGYVMGLEYAE 81
+                              7899999999***********************************97655227************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (94 nodes)
+Target sequences:                         2326  (720820 residues searched)
+Passed MSV filter:                        57  (0.0245056); expected 46.5 (0.02)
+Passed bias filter:                       53  (0.0227859); expected 46.5 (0.02)
+Passed Vit filter:                         4  (0.00171969); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000859845); expected 0.0 (1e-05)
+Initial search space (Z):               2326  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.06
+# Mc/sec: 1129.28
+//
+[ok]

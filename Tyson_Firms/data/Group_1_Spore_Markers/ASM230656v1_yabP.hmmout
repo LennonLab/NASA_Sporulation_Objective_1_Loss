@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yabP_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM230656v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM230656v1_yabP.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM230656v1_yabP.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG41122J9.meta_raw  [M=95]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+     0.0021   15.8   0.0      0.025   12.4   0.0    2.2  2  DBSN01000072.1_109  # 115224 # 115613 # -1 # ID=81_109;partia
+
+
+Domain annotation for each sequence (and alignments):
+>> DBSN01000072.1_109  # 115224 # 115613 # -1 # ID=81_109;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   6.6e-06     0.025      45      78 ..       7      40 ..       4      55 .. 0.86
+   2 ?    1.0   0.0     0.023        88      27      46 ..      94     114 ..      88     127 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 6.6e-06
+  NOG.ENOG41122J9.meta_raw 45 GlLtikGeeLhikkLslekgeveieGkidslvYs 78
+                              G   + Ge L i+kLs  k + +ieG+ + +++ 
+        DBSN01000072.1_109  7 GKCPVCGERLTITKLSCHKCHTNIEGQFNPCEFC 40
+                              556689*********************9988875 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.023
+  NOG.ENOG41122J9.meta_raw  27 vkevesfdeeeille.telGl 46 
+                               +++ve+ +++ei+l   e G 
+        DBSN01000072.1_109  94 INDVEKSNDREIILAqLENGE 114
+                               677777777777664134444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (95 nodes)
+Target sequences:                         3857  (1282759 residues searched)
+Passed MSV filter:                       159  (0.0412237); expected 77.1 (0.02)
+Passed bias filter:                       91  (0.0235935); expected 77.1 (0.02)
+Passed Vit filter:                         7  (0.00181488); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000259269); expected 0.0 (1e-05)
+Initial search space (Z):               3857  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 6093.11
+//
+[ok]

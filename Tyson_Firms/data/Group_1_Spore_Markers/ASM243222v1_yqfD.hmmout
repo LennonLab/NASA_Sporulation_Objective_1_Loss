@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yqfD_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM243222v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM243222v1_yqfD.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM243222v1_yqfD.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XR5M.meta_raw  [M=402]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+     0.0086   11.6   1.1       0.18    7.2   0.2    2.2  2  DJGK01000032.1_9  # 8440 # 8817 # -1 # ID=12_9;partial=00;sta
+
+
+Domain annotation for each sequence (and alignments):
+>> DJGK01000032.1_9  # 8440 # 8817 # -1 # ID=12_9;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.2   0.2   0.00011      0.18     211     225 ..      71      85 ..      69      94 .. 0.90
+   2 !    3.0   0.0     0.002       3.3     190     212 ..      94     116 ..      86     122 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 7.2 bits;  conditional E-value: 0.00011
+  NOG.ENOG410XR5M.meta_raw 211 vvkeGdtVkkGdvLi 225
+                               +vkeG++Vk GdvL 
+          DJGK01000032.1_9  71 LVKEGQEVKSGDVLL 85 
+                               8************95 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.002
+  NOG.ENOG410XR5M.meta_raw 190 cniVAkkdGvIteiivrsGtpvv 212
+                                 i A +dG + +i + +G +v 
+          DJGK01000032.1_9  94 NEILAPRDGKVASITTSEGSAVN 116
+                               5799***************8763 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (402 nodes)
+Target sequences:                         1684  (521667 residues searched)
+Passed MSV filter:                       159  (0.0944181); expected 33.7 (0.02)
+Passed bias filter:                      104  (0.0617577); expected 33.7 (0.02)
+Passed Vit filter:                        13  (0.00771971); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000593824); expected 0.0 (1e-05)
+Initial search space (Z):               1684  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.03s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6990.34
+//
+[ok]

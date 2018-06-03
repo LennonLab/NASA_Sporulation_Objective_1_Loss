@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  sspABC_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM239715v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM239715v1_sspABC.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM239715v1_sspABC.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG411226C.meta_raw  [M=70]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.4e-18   62.3   0.3    2.8e-18   62.1   0.3    1.1  1  DGZR01000001.1_74  # 78518 # 78748 # 1 # ID=64_74;partial=00;
+    9.4e-18   60.4   0.1      1e-17   60.3   0.1    1.0  1  DGZR01000040.1_5   # 3205 # 3408 # 1 # ID=99_5;partial=00;sta
+    7.7e-13   44.7   0.0    4.6e-12   42.2   0.0    1.9  1  DGZR01000047.1_5   # 4403 # 4645 # -1 # ID=95_5;partial=00;st
+    3.7e-12   42.5   0.0    4.6e-12   42.2   0.0    1.1  1  DGZR01000001.1_75  # 78983 # 79231 # 1 # ID=64_75;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DGZR01000001.1_74  # 78518 # 78748 # 1 # ID=64_74;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.1   0.3     7e-21   2.8e-18       5      68 ..       3      72 ..       1      74 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 62.1 bits;  conditional E-value: 7e-21
+  NOG.ENOG411226C.meta_raw  5 rerntnqlvvpgaqqaldqmKyEiAsElGvqlgad......ttsranGsvGGeitkrLValAeqqlgggv 68
+                              r++++ + +++ga+  ld++K E+A+ElG+  + +      +t+r++G vGG ++k++ + Ae+++ g+ 
+         DGZR01000001.1_74  3 RRSSRRRPLIAGAEGVLDRFKLEVANELGIANQLQskgwedMTTREVGTVGGLMVKKMLKEAENRIMGSG 72
+                              6789999***********************44433368888***********************998875 PP
+
+>> DGZR01000040.1_5  # 3205 # 3408 # 1 # ID=99_5;partial=00;start_type=TTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   60.3   0.1   2.6e-20     1e-17       9      65 ..       4      66 ..       1      67 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 60.3 bits;  conditional E-value: 2.6e-20
+  NOG.ENOG411226C.meta_raw  9 tnqlvvpgaqqaldqmKyEiAsElGv..qlgad.....ttsranGsvGGeitkrLValAeqqlg 65
+                              + +l+ p a+q +dq+K E+A+ElG+  +++       +t+r+ G vGG+++k++V++ +++l 
+          DGZR01000040.1_5  4 NRKLLTPAAEQVMDQFKHEVAEELGLadKIA-RqgwgeMTTRECGRVGGTMVKKMVKMVQDHLD 66
+                              4589**********************63344.359999*********************99985 PP
+
+>> DGZR01000047.1_5  # 4403 # 4645 # -1 # ID=95_5;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=3-4bp;gc_cont=0.5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.0   1.2e-14   4.6e-12      20      68 ..      19      77 ..       6      78 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 42.2 bits;  conditional E-value: 1.2e-14
+  NOG.ENOG411226C.meta_raw 20 aldqmKyEiAsElGvqlgad......ttsranGsv....GGeitkrLValAeqqlgggv 68
+                               ld++K EiA ElG++   +      +tsr+ G +    GG+++k +V++A++ +++++
+          DGZR01000047.1_5 19 LLDRFKHEIADELGLSEKISsqgwpnMTSRECGRIggriGGNMVKLMVRYAQEMMAENN 77
+                              69*************65554579999****99865111167889*********999876 PP
+
+>> DGZR01000001.1_75  # 78983 # 79231 # 1 # ID=64_75;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.0   1.2e-14   4.6e-12       8      67 ..      12      77 ..       5      80 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 42.2 bits;  conditional E-value: 1.2e-14
+  NOG.ENOG411226C.meta_raw  8 ntnqlvvpgaqqaldqmKyEiAsElGvqlgad......ttsranGsvGGeitkrLValAeqqlggg 67
+                              ++ q++v++a++ ++ +K E+A++lG +   +      +  r+ G +GG++++r+++l e  l+ g
+         DGZR01000001.1_75 12 EKKQILVHEAERVMEDFKNEVAADLGYTQRIEsvgyhnMYPRECGQIGGNMVRRMIELVERDLAHG 77
+                              5789**********************965555589999***********************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (70 nodes)
+Target sequences:                         1581  (466554 residues searched)
+Passed MSV filter:                        44  (0.0278305); expected 31.6 (0.02)
+Passed bias filter:                       40  (0.0253004); expected 31.6 (0.02)
+Passed Vit filter:                         5  (0.00316256); expected 1.6 (0.001)
+Passed Fwd filter:                         4  (0.00253004); expected 0.0 (1e-05)
+Initial search space (Z):               1581  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 3265.88
+//
+[ok]

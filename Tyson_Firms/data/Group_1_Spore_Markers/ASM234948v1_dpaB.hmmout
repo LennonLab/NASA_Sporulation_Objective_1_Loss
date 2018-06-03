@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM234948v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM234948v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM234948v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    2.5e-06   23.6   1.4    5.8e-06   22.5   1.4    1.7  1  DEDH01000019.1_13  # 14644 # 15846 # -1 # ID=41_13;partial=00
+
+
+Domain annotation for each sequence (and alignments):
+>> DEDH01000019.1_13  # 14644 # 15846 # -1 # ID=41_13;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.5   1.4   3.2e-09   5.8e-06       1     114 [.       5     118 ..       5     186 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 22.5 bits;  conditional E-value: 3.2e-09
+          TIGR02852   1 kriGfgltgshctleavlpkleklveegaevvpivsetvkt..tetrfGegadwikkieeitgkkaikti.veaePlGPkkkldvlviaPlt 89 
+                        k+i +g+ g   +++a  + + +l++ ga+v  i++ +  +  t   fGe +      +++t   + +    ++e +   +  dv+viaP t
+  DEDH01000019.1_13   5 KHIVVGVCGGIAAYKA-AGLVSHLRQAGADVHCIMTANAAKlvTPITFGELSG-----NDVTVDMFANIYkWDVEHIALARMADVFVIAPAT 90 
+                        5677777787777765.578999*************99875226668898765.....4555555444331589****************** PP
+
+          TIGR02852  90 Gnsmsklanaitd...spvlmaakatlr 114
+                         + + k+an+i+d   s+ +ma+ka++ 
+  DEDH01000019.1_13  91 ADIIGKVANGIADdmlSTTVMATKAKVI 118
+                        ************9444456888888763 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         1807  (568834 residues searched)
+Passed MSV filter:                        49  (0.0271168); expected 36.1 (0.02)
+Passed bias filter:                       42  (0.0232429); expected 36.1 (0.02)
+Passed Vit filter:                         3  (0.00166021); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000553403); expected 0.0 (1e-05)
+Initial search space (Z):               1807  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 5318.60
+//
+[ok]

@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yqfD_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM231549v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM231549v1_yqfD.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM231549v1_yqfD.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG410XR5M.meta_raw  [M=402]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+  ------ inclusion threshold ------
+      0.019   10.6   4.4       0.31    6.7   0.6    2.2  2  DCGJ01000121.1_2  # 1318 # 1683 # -1 # ID=140_2;partial=00;st
+
+
+Domain annotation for each sequence (and alignments):
+>> DCGJ01000121.1_2  # 1318 # 1683 # -1 # ID=140_2;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.6   0.00016      0.31     202     225 ..      66      82 ..      33      87 .. 0.69
+   2 ?    5.8   0.3   0.00029      0.57     189     211 ..      90     112 ..      83     119 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.00016
+  NOG.ENOG410XR5M.meta_raw 202 eiivrsGtpvvkeGdtVkkGdvLi 225
+                               ++++         G+ VkkGdvL+
+          DCGJ01000121.1_2  66 KVVA-------AAGQAVKKGDVLV 82 
+                               5444.......5567788888887 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.00029
+  NOG.ENOG410XR5M.meta_raw 189 pcniVAkkdGvIteiivrsGtpv 211
+                                 +iVA  dG++ +i v  G++v
+          DCGJ01000121.1_2  90 ENDIVAPADGTVASINVAVGQSV 112
+                               579************99988864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (402 nodes)
+Target sequences:                         1976  (672009 residues searched)
+Passed MSV filter:                       162  (0.0819838); expected 39.5 (0.02)
+Passed bias filter:                       98  (0.0495951); expected 39.5 (0.02)
+Passed Vit filter:                        16  (0.00809717); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000506073); expected 0.0 (1e-05)
+Initial search space (Z):               1976  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 13507.38
+//
+[ok]

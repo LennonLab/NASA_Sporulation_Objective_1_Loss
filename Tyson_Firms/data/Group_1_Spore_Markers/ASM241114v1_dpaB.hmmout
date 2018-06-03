@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  dpaB_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM241114v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM241114v1_dpaB.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM241114v1_dpaB.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       TIGR02852  [M=187]
+Accession:   TIGR02852
+Description: spore_dpaB: dipicolinic acid synthetase, B subunit
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    5.6e-06   23.1   0.1    1.3e-05   21.9   0.1    1.7  1  DHRA01000012.1_72  # 78432 # 79634 # 1 # ID=9_72;partial=00;s
+  ------ inclusion threshold ------
+      0.012   12.2   0.1      0.014   12.0   0.1    1.2  1  DHRA01000050.1_44  # 40767 # 41345 # 1 # ID=63_44;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DHRA01000012.1_72  # 78432 # 79634 # 1 # ID=9_72;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   0.1   9.8e-09   1.3e-05      49     133 ..      42     131 ..       5     152 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 9.8e-09
+          TIGR02852  49 gadwikki..eeitgkkaiktive......aePlGPkkkldvlviaPltGnsmsklanaitdspvlmaakatlrnnkPvvlaistndalGln 132
+                        ++++i+ +   eitg+++i ++ +      ++ +G  +k d++vi+P t n + k++++i+d  +     + +    Pv++  + n a+ ln
+  DHRA01000012.1_72  42 ATEFIQPLtfREITGNPVIVSMWDepkrwsVQHIGLARKADLFVIVPATANVLGKISHGIADDMLTT---TVMATTAPVLFVPAMNSAMYLN 130
+                        556776542279*********964333333788*****************************96655...4555678999999999999888 PP
+
+          TIGR02852 133 a 133
+                         
+  DHRA01000012.1_72 131 P 131
+                        5 PP
+
+>> DHRA01000050.1_44  # 40767 # 41345 # 1 # ID=63_44;partial=00;start_type=TTG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_con
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1     1e-05     0.014      80     122 ..      78     120 ..       3     142 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1e-05
+          TIGR02852  80 ldvlviaPltGnsmsklanaitdspvlmaakatlrnnkPvvla 122
+                           +vi+P++  +m  ++++i+ + ++ aa + l++++ +vl 
+  DHRA01000050.1_44  78 AQAMVIVPCSMKTMGLISQGIAANLMVRAAECMLKEGRKLVLV 120
+                        568***********************************99985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (187 nodes)
+Target sequences:                         2654  (797257 residues searched)
+Passed MSV filter:                        70  (0.0263753); expected 53.1 (0.02)
+Passed bias filter:                       55  (0.0207234); expected 53.1 (0.02)
+Passed Vit filter:                         7  (0.00263753); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.00075358); expected 0.0 (1e-05)
+Initial search space (Z):               2654  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.05
+# Mc/sec: 2981.74
+//
+[ok]

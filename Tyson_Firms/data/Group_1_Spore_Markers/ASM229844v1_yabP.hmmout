@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  yabP_hmm.txt
+# target sequence database:        ../ncbi-genomes-2018-03-29/PROTEINS/ASM229844v1.faa
+# output directed to file:         ../Group_1_Spore_Markers/ASM229844v1_yabP.hmmout
+# per-seq hits tabular output:     ../Group_1_Spore_Markers/ASM229844v1_yabP.txt
+# number of worker threads:        4
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NOG.ENOG41122J9.meta_raw  [M=95]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    5.1e-12   41.9   0.8    5.8e-12   41.8   0.8    1.0  1  DBJX01000011.1_35  # 39471 # 39716 # 1 # ID=29_35;partial=00;
+    1.1e-05   21.7   0.0    1.2e-05   21.5   0.0    1.1  1  DBJX01000007.1_53  # 53227 # 53484 # -1 # ID=1_53;partial=00;
+
+
+Domain annotation for each sequence (and alignments):
+>> DBJX01000011.1_35  # 39471 # 39716 # 1 # ID=29_35;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.8   8.8e-15   5.8e-12      21      95 .]      10      81 ..       3      81 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 41.8 bits;  conditional E-value: 8.8e-15
+  NOG.ENOG41122J9.meta_raw 21 kleitGvkevesfdeeeilletelGlLtikGeeLhikkLslekgeveieGkidslvYsdeeskkkkkgllsrlfk 95
+                              +++itG+++v   +++++ ++ +   L++ G++L ++kL++e+g++  +Gk++++++   +    ++g+l++l k
+         DBJX01000011.1_35 10 SVSITGITSVGDVNDKTVSVKLKDRSLLVSGSNLSVTKLDVEQGTLFATGKVSQVKFGAGKG---AEGFLKKLVK 81
+                              689******************************************************98876...789**99976 PP
+
+>> DBJX01000007.1_53  # 53227 # 53484 # -1 # ID=1_53;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=11-12bp;
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.0   1.8e-08   1.2e-05      12      78 ..      20      84 ..      11      85 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 1.8e-08
+  NOG.ENOG41122J9.meta_raw 12 hklslenRkkleitGvkevesfdeeeilletelGlLtikGeeLhikkLslekgeveieGkidslvYs 78
+                               k+sl + +   ++G k + sf + ++  +   G+L + Ge+L i+++s  k    ++Gki+ + Y+
+         DBJX01000007.1_53 20 SKVSLAGNRVALVEGQKGILSFSDVSVKFKMPDGTLEVSGEKLVIEEIS--KTAAIVSGKISGVFYD 84
+                              688999999999**********************************875..8888999**9999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (95 nodes)
+Target sequences:                         1312  (444701 residues searched)
+Passed MSV filter:                        49  (0.0373476); expected 26.2 (0.02)
+Passed bias filter:                       36  (0.027439); expected 26.2 (0.02)
+Passed Vit filter:                         3  (0.00228659); expected 1.3 (0.001)
+Passed Fwd filter:                         2  (0.00152439); expected 0.0 (1e-05)
+Initial search space (Z):               1312  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4224.66
+//
+[ok]
